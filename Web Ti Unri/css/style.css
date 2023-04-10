@@ -2,6 +2,72 @@ footer {
 	background: #101010;
 	padding: 86px 0;
 }
+
+nav{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+}
+nav.pink{
+    background-color: #000000;
+    transition: 0.5s;
+}
+label.logo{
+    color: rgb(252, 252, 252);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+label.logo.pink{
+    color: #F252AA;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+    position: relative;
+}
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    display: block;
+    margin: auto;
+    background: pink;
+    position: relative;
+    /* position: absolute; */
+    left: 0;
+    bottom: 10px;
+    transition: 0.5s;
+}
+nav ul li.pink::after{
+    background:pink;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+    font-weight: 700;
+    font-size: 15px;
+    padding: 7px 13px;
+    /* border-radius: 3px; */
+}
+nav ul li a.pink{
+    color: #F252AA;
+}
 .kemitraan{
 	 padding-bottom: 40px; 
 	 width: 65%; 
