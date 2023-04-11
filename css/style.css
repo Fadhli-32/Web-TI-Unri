@@ -253,9 +253,16 @@ nav ul li a.pink{
 	display: block;
 }
 
+.slideshow{
+	background-color: transparent;
+	height: 300px;
+	padding-top: 300px;
+
+}
 
 
-@media (min-width: 320px) and (max-width: 719px) {
+
+@media (min-width: 400px) and (max-width: 719px) {
 	#scrollmenu {
 		display: none;
 	}
@@ -308,7 +315,7 @@ nav ul li a.pink{
    } 
    
    .karosel{
-	margin-top: 270px;
+	margin-top: 340px;
    }
    .logounri{
 	margin-left: 20px;
@@ -319,9 +326,11 @@ nav ul li a.pink{
 
 	.slideshow{
 		background-color: #060047;
+		height: 30px;
+
 	}
 	.imgcontainer{
-		width: 50%;
+		width: 100%;
 	}
 	.kotakbiru{
 		background-color: #060047;
