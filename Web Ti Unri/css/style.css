@@ -1,8 +1,26 @@
+body{
+	max-width: 100vw;
+	overflow-x: hidden;;
+}
 footer {
 	background-color: #060047;
 	padding: 86px 0;
 }
+.header{
+	background-color: #1c315e; height: 90px;
+}
+.btn{
+	background-color: #060047;
+	color: white;
+}
+.btn:hover{
+	background-color: #ffff00;
+	color: black;
+}
 
+*{
+	font-family: Poppins;
+}
 nav{
     height: 80px;
     width: 100%;
@@ -13,10 +31,11 @@ nav{
     z-index: 100000;
 }
 nav.pink{
-    background-color: #000000;
+    background-color: #1c315e;
     transition: 0.5s;
+	padding:0px;
 }
-label.logo{
+/* label.logo{
     color: rgb(252, 252, 252);
     font-size: 35px;
     line-height: 80px;
@@ -25,7 +44,7 @@ label.logo{
 }
 label.logo.pink{
     color: #F252AA;
-}
+} */
 nav ul{
     float: right;
     margin-right: 20px;
@@ -65,21 +84,38 @@ nav ul li a{
     padding: 7px 13px;
     /* border-radius: 3px; */
 }
+.logounri{
+	margin-left: 80px;
+	width: 245px; height: 73px;
+}
 .nav-1:hover{
 	color: #ffff00;
 }
 .nav-2:hover{
     text-decoration: none;
-	color: #1c315e;
+	color: #ffff00;
 }
 .search:hover{
-	color: #1c315e;
+	color: #ffff00;
+}
+.imgheader{
+	border: none; outline: none; 
+}
+.nav-1:hover{
+	color: #ffff00;
+}
+.nav-2.pink:hover{
+    text-decoration: none;
+	color:#ffff00;
+}
+.search.pink:hover{
+	color: #ffff00;
 }
 nav ul li a.pink{
-    color: #F252AA;
+    color: #f7f7f7;
 }
 .kemitraan{
-	 padding-bottom: 40px; 
+	 padding-bottom: 100px; 
 	 width: 65%; 
 	 justify-content: center; 
 	 display: block; 
@@ -101,8 +137,8 @@ nav ul li a.pink{
 	text-align: center;
 	text-decoration: none;
 	font-weight: 600;
-    font-size: 22px;
-    padding: 7px 26px;
+    font-size: 20px;
+    padding: 7px 26	px;
    
 }
 .card img{
@@ -164,16 +200,43 @@ nav ul li a.pink{
     bottom: 0px;
     margin: auto;
 }
+/* .berita-sm h1::after{
+	content :"";
+	height: 4px;
+	width: 30%;
+	background-color: #000000;
+	display:block;
+	position: relative;
+    right: 20%;
+	top: -25px;
+    bottom: 0px;
+    margin: auto;
+}
+.berita-sm h1::before{
+	content :"";
+	height: 4px;
+	width: 30%;
+	background-color: #000000;
+	display:block;
+	position: relative;
+    left: 20%;
+	top: 26px;
+    bottom: 0px;
+    margin: auto;
+} */
+/* .berita-sm h1{
+	background-color: white;
+} */
 
 
-#basic-addon2 {
+/* #basic-addon2 {
 	background: #fe1e4f;
 	color: #fff;
 }
 .socials i {
 	font-size: 18px;
 	margin-right: 15px;
-}
+} */
 .copyright{
 	text-align: center; 
 	padding-top: 50px;
@@ -181,9 +244,90 @@ nav ul li a.pink{
 	color: white;
 }
 .karosel{
-	margin-top: 700px;
+	margin-top: 600px;
 }
-@media (max-width: 719px) {
+.garisjudul{
+	width: 35%; 
+	background-color: #000000; 
+	height: 3px; 
+	display: block;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 719px) {
+	#scrollmenu {
+		display: none;
+	}
+	.single-box {
+		margin-bottom: 50px;
+		text-align: center;
+		justify-content: center;
+		padding: 9px;
+	}
+	.imgheader{
+		border: none; outline: none; 
+		
+	}
+	.header{
+		background-color: #060047;
+	}
+	.garisjudul{
+		width: 20%; 
+		background-color: #000000; 
+		height: 3px; 
+		display: block;
+	}
+	.teksgarisjudul{
+		font-size: 30px;
+	}
+	.single-box h2::after {
+		content :"";
+		height: 2px;
+		width: 220px;
+		background-color: #ffff00;
+		display:block;
+		position: relative;
+		left: 0px;
+		top: 15px;
+		bottom: 0px;
+		margin: auto;
+	}
+	.single-box img{
+		width: 50%;
+	}
+	.header{
+		background-color: #1c315e;
+	}
+	.kemitraan{
+		padding-bottom: 100px; 
+		width: 75%; 
+		justify-content: center; 
+		display: block; 
+		margin: 0 auto;
+   } 
+   
+   .karosel{
+	margin-top: 270px;
+   }
+   .logounri{
+	margin-left: 20px;
+	width: 171.5px; 
+	height: 51.1px;
+}
+
+
+	.slideshow{
+		background-color: #060047;
+	}
+	.imgcontainer{
+		width: 50%;
+	}
+	.kotakbiru{
+		background-color: #060047;
+		text-align: center;
+		color: white;
+	}
 	.single-box {
 		margin-bottom: 50px;
 		text-align: center;
@@ -204,12 +348,6 @@ nav ul li a.pink{
 	}
 	.single-box img{
 		width: 50%;
-	}
-}
-
-@media (max-width: 719px) {
-	.single-box {
-		margin-bottom: 50px;
 	}
 
 	#carouselExample{
@@ -217,18 +355,33 @@ nav ul li a.pink{
 	}
 
 }
-@media (min-width: 720px) and (max-width: 991px) {
-	.single-box {
-		margin-bottom: 50px;
-	}
-}
 
 @media (min-width: 719px) and (max-width: 991px) {
+	#scrollmenu {
+		display: none;
+	}
+	
 	.single-box {
 		margin-bottom: 50px;
 		text-align: center;
 		justify-content: center;
 		padding: 9px;
+	}
+	.imgheader{
+		border: none; outline: none; 
+		
+	}
+	.header{
+		background-color: #060047;
+	}
+	.garisjudul{
+		width: 20%; 
+		background-color: #000000; 
+		height: 3px; 
+		display: block;
+	}
+	.teksgarisjudul{
+		font-size: 30px;
 	}
 	.single-box h2::after {
 		content :"";
@@ -245,20 +398,65 @@ nav ul li a.pink{
 	.single-box img{
 		width: 50%;
 	}
+	.header{
+		background-color: #1c315e;
+	}
 	.kemitraan{
-		padding-bottom: 40px; 
+		padding-bottom: 100px; 
 		width: 75%; 
 		justify-content: center; 
 		display: block; 
 		margin: 0 auto;
    } 
+   
    .karosel{
 	margin-top: 470px;
+	width: 100%;
+	z-index: 10000;
    }
+   .logounri{
+	margin-left: 20px;
+	width: 171.5px; 
+	height: 51.1px;
+}
+
 
 	.slideshow{
 		background-color: #060047;
 	}
-
+	.imgcontainer{
+		width: 100%;
+	}
+	.kotakbiru{
+		background-color: #060047;
+		text-align: center;
+		color: white;
+	}
+	
 }
 
+
+body::-webkit-scrollbar {
+    width: 10px;               
+}
+body::-webkit-scrollbar-track {
+    background-color: transparent;        
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #060047;   
+    border-radius: 100px;       
+}
+.arrow{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background:  #060047;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 20px;
+}
