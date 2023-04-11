@@ -262,10 +262,12 @@ nav ul li a.pink{
 
 
 
+
+
 @media (min-width: 250px) and (max-width: 719px) {
-	#scrollmenu {
+	/* #scrollmenu {
 		display: none;
-	}
+	} */
 	.single-box {
 		margin-bottom: 50px;
 		text-align: center;
