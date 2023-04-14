@@ -259,15 +259,22 @@ nav ul li a.pink{
 	padding-top: 300px;
 
 }
+.sidebarmobile{
+	position: fixed;
+	z-index: 100;
+	left: -100vw;
+	transition: all .5s ease-in-out;
+	display: block;
+}
 
 
 
 
 
 @media (min-width: 250px) and (max-width: 719px) {
-	/* #scrollmenu {
+	#scrollmenu {
 		display: none;
-	} */
+	}
 	.single-box {
 		margin-bottom: 50px;
 		text-align: center;
@@ -317,7 +324,7 @@ nav ul li a.pink{
    } 
    
    .karosel{
-	margin-top: 340px;
+	margin-top: 320px;
    }
    .logounri{
 	margin-left: 20px;
@@ -370,6 +377,21 @@ nav ul li a.pink{
 
 @media (min-width: 719px) and (max-width: 991px) {
 	#scrollmenu {
+		display: none;
+	}
+
+	.toggle{
+		font-size: 30px;
+	
+		display: none;
+		color: white;
+	}
+	
+	.toggle a{
+	    color: white;
+	}
+
+	.close-btn{
 		display: none;
 	}
 	
@@ -444,6 +466,8 @@ nav ul li a.pink{
 		text-align: center;
 		color: white;
 	}
+
+
 	
 }
 
