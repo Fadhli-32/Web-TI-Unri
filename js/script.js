@@ -23,6 +23,8 @@
 
 
 
+
+
 // const nav = document.querySelectorAll('.bungkus');
 
 // window.addEventListener("scroll", () => {
@@ -38,18 +40,31 @@
 // 	}
 // });
 
+
+
 $(window).scroll(function(){
 		
     if($(window).scrollTop()){
       // document.getElementById("scrollmenu").style.position = "fixed";
-        $("nav, nav ul li, nav ul li a, .search, .logounri2, .navbar2").addClass("pink");
+        $("nav,nav ul, nav ul li, nav ul li a, .search, .logounri2, .navbar2").addClass("pink");
     }else{
       // $("nav, scrollmenu").style.position = "relative";
-        $("nav, nav ul li, nav ul li a, .search, .logounri2, .navbar2").removeClass("pink");
+        $("nav,nav ul, nav ul li, nav ul li a, .search, .logounri2, .navbar2").removeClass("pink");
     }
 })
 
 
+
+// $(window).scroll(function(){
+		
+//   if($(window).scrollTop()){
+//     // document.getElementById("scrollmenu").style.position = "fixed";
+//       $("nav,.ul, .li, nav ul li a, .search, .logounri2, .navbar2").addClass("pink");
+//   }else{
+//     // $("nav, scrollmenu").style.position = "relative";
+//       $("nav,.ul, .li, nav ul li a, .search, .logounri2, .navbar2").removeClass("pink");
+//   }
+// })
 // function onScroll () {
 //     window.addEventListener("scroll", () => {
 //         headerSticky.classList.add("pink")
@@ -141,6 +156,10 @@ $(window).scroll(function(){
 const mainMenu = document.getElementsByClassName('mobile-menu')[0];
 const closeMenu = document.getElementsByClassName('closeMenu')[0];
 const openMenu = document.getElementsByClassName('openMenu')[0];
+const menu = document.getElementsByClassName('rsub-menu')[0];
+const menu2 = document.getElementsByClassName('rsub-menu')[1];
+const menu3 = document.getElementsByClassName('rsub-menu')[2];
+const menu4 = document.getElementsByClassName('rsub-menu')[3];
 
 function handleSidebar() {
 openMenu.addEventListener('click', () => {
@@ -151,9 +170,19 @@ openMenu.addEventListener('click', () => {
 closeMenu.addEventListener('click', () => {
     mainMenu.style.top = '-100%';
     openMenu.style.display = 'block';
-
     closeMenu.style.display = 'none';
+    menu.style.display = 'none';
+    menu2.style.display = 'none';
+    menu3.style.display = 'none';
+    menu4.style.display = 'none';
 })
 }
 
 handleSidebar()
+
+$(document).ready(function(){
+  $(".nav-3").click(function(){
+    $(this).next(".rsub-menu").slideToggle();
+  })
+})
+

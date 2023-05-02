@@ -1,0 +1,131 @@
+.kotakSejarah{
+    background-color: #1c315e;
+    height: 600px;
+    margin: auto;
+}
+.garisjudul2 {
+    width: 20%;
+    background-color: #ffffff;
+    height: 3px;
+    display: block;
+}
+.teksSejarah{
+    color: #ffffff;
+    font-family: poppins;
+    padding-left: 500px;
+}
+.gambarSejarah img{
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+}
+.tombolprofil {
+    width: 400px;
+    height: 60px;
+    background-color: #1c315e;
+    color: #ffffff;
+}
+.btn{
+	background-color: #1c315e;
+	color: white;
+}
+.btn:hover{
+	background-color: #ffff00;
+	color: black;
+}
+.teksgarisjudul2 {
+    font-size: 30px;
+    color: #f7f7f7;
+}
+.gambarSejarahMobile img{
+
+    display: none;
+}
+
+@media (min-width: 200px) and (max-width: 420px) {
+
+    .gambarSejarahMobile img{
+        width: 380px;
+        height: 250px;
+        padding: 20px;
+        align-items: center;
+        display: block;
+
+    }
+
+    .gambarSejarah img{
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+        align-items: center;
+        display: none;
+    }
+    .kotakSejarah{
+        background-color: #f7f7f7;
+        height: 1100px;
+    }
+
+    .garisjudul2 {
+        width: 20%;
+        background-color: #000000;
+        height: 3px;
+        display: block;
+    }
+    .teksSejarah{
+        color: #000000;
+        font-family: poppins;
+        padding-left: 0px;
+    }
+    .teksgarisjudul2 {
+        font-size: 30px;
+        color: #000000;
+        font-family: Poppins; 
+        font-weight:600; 
+        text-align: center; 
+        margin: 0 15px;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 920px) {
+
+    .gambarSejarahMobile img{
+        width: 700px;
+        height: 400px;
+        padding: 20px;
+        align-items: center;
+        display: block;
+
+    }
+
+    .gambarSejarah img{
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+        align-items: center;
+        display: none;
+    }
+    .kotakSejarah{
+        background-color: #f7f7f7;
+        height: 1000px;
+    }
+
+    .garisjudul2 {
+        width: 20%;
+        background-color: #000000;
+        height: 3px;
+        display: block;
+    }
+    .teksSejarah{
+        color: #000000;
+        font-family: poppins;
+        padding-left: 0px;
+    }
+    .teksgarisjudul2 {
+        font-size: 30px;
+        color: #000000;
+        font-family: Poppins; 
+        font-weight:600; 
+        text-align: center; 
+        margin: 0 15px;
+    }
+}

@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+@font-face {
+    font-family: "Grotesque";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.eot"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.ttf"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Grotesque Black";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.eot"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.ttf"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.woff");
+    font-weight: bold;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+/* a[href] {
+  position: relative;
+}
+a[href], a[href]:link, a[href]:visited, a[href]:active {
+  text-decoration: none;
+  color: #d8276c;
+  text-shadow: 2px 2px 2px #070c11;
+  padding-bottom: 3px;
+  font-weight: bold;
+}
+a[href]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  width: 0;
+  height: 1px;
+  transition: 0.35s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+a[href]:hover::after {
+  width: 100%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+} */
+
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.all {
+    padding:90px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    /* flex-wrap: wrap;
+    display: flex;
+    margin-top: 100px; */
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and  (max-width: 850px) {
+	.all{
+        grid-template-columns:repeat(2, 1fr);
+        padding-bottom: 30px;
+    }
+
+    .all .kartu {
+        display: block;
+        position: relative;
+        width: 200px;
+        height: 350px;
+        /* width: 150px;
+        height: 350px; */
+    } 
+
+    .all .kartu .thumb {
+        width: auto;
+        height: 70%;
+        /* height: 250px; */
+    }
+    .all .kartu .infos {
+        /* outline: 10px solid black; */
+        width: auto;
+        height: 350px;
+      
+        padding: 14px 24px;
+       
+    }
+    .all .kartu:hover .infos {
+        transform: translateY(-250px);
+    }
+    .all .kartu .infos .title {
+        position: relative;
+        margin: 5px 0;
+        letter-spacing: 3px;
+        color: #152536;
+        font-family: "Grotesque Black", sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-shadow: 0 0 0px #32577f;
+        text-align: left;
+
+}
+.all .kartu .infos .date,
+.all .kartu .infos .seats {
+    /* margin-bottom: 50px; */
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 0.60rem;
+    color: black;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+}
+
+
+
+.all .txt {
+    font-family: Poppins;
+    line-height: 2;
+
+    font-size: 12px;
+    color: black;
+    
+
+    opacity: 0;
+    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.all .txt ul{
+    font-weight: 600;
+    padding: 0px 1px;
+    list-style: none;
+    font-size: 10px;
+    margin: 0px -10px;
+    /* list-style: none;
+    display: inline-block; 
+	text-align: left;  */
+    
+}
+.txt ul li{
+
+}
+.all .txt p{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+}
+
+@media screen and  (max-width: 500px) {
+	.all{
+        grid-template-columns:repeat(2, 1fr);
+        padding-bottom: 30px;
+    }
+
+    .all .kartu {
+        display: block;
+        position: relative;
+        width: 150px;
+        height: 300px;
+        /* width: 150px;
+        height: 350px; */
+    } 
+
+    .all .kartu .thumb {
+        width: auto;
+        height: 70%;
+        /* height: 250px; */
+    }
+    .all .kartu .infos {
+        /* outline: 10px solid black; */
+        width: auto;
+        height: 300px;
+       
+        padding: 14px 10px;
+       
+    }
+    .all .kartu:hover .infos {
+        transform: translateY(-210px);
+    }
+    .all .kartu .infos .title {
+        position: relative;
+        margin: 5px 0;
+        letter-spacing: 3px;
+        color: #152536;
+        font-family: "Grotesque Black", sans-serif;
+        font-size:10px;
+        text-transform: uppercase;
+        text-shadow: 0 0 0px #32577f;
+        text-align: left;
+
+}
+.all .kartu .infos .date,
+.all .kartu .infos .seats {
+    /* margin-bottom: 50px; */
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 0.45rem;
+    color: black;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+}
+
+
+
+.all .txt {
+    font-family: Poppins;
+    line-height: 2;
+
+    font-size: 12px;
+    color: black;
+    
+
+    opacity: 0;
+    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.all .txt ul{
+    font-weight: 600;
+    padding: 0px 1px;
+    list-style: none;
+    font-size: 8px;
+    margin: 0px -3px;
+    /* list-style: none;
+    display: inline-block; 
+	text-align: left;  */
+    
+}
+.txt ul li{
+
+}
+.all .txt p{
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+	}
+
+/* batas media */
+
+
+.kartu {
+    position: relative;
+    width: 250px;
+    height: 450px;
+    border-radius: 3px;
+    box-shadow: 0 1px 40px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+
+.kartu .infos {
+    /* outline: 10px solid black; */
+    width: auto;
+    height: 450px;
+    position: relative;
+    padding: 14px 24px;
+    background: #fff;
+    transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .kartu .infos .flag {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 23px;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/flag.png") no-repeat top right;
+    background-size: 100% auto;
+    display: inline-block;
+} */
+/* .kartu .infos .seats {
+    display: inline-block;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+} */
+.kartu .infos .title {
+    position: relative;
+    margin: 5px 0;
+    letter-spacing: 3px;
+    color: #152536;
+    font-family: "Grotesque Black", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-shadow: 0 0 0px #32577f;
+    text-align: left;
+
+}
+.kartu .infos .date,
+.kartu .infos .seats {
+    /* margin-bottom: 50px; */
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 0.70rem;
+    color: black;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+}
+
+
+
+.txt {
+    font-family: Poppins;
+    line-height: 2;
+
+    font-size: 12px;
+    color: black;
+    
+
+    opacity: 0;
+    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.txt ul{
+    font-weight: 600;
+    padding: 0px 1px;
+    list-style: none;
+    font-size: 10px;
+    margin: 0px -10px;
+    /* list-style: none;
+    display: inline-block; 
+	text-align: left;  */
+    
+}
+.txt ul li{
+
+}
+.txt p{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* .txt ul li{
+    list-style: none;
+} */
+/* .txt p {
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.txt ul li{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family:Montserrat;
+	font-size: 12px;
+    font-weight: 500;
+	margin-left: -30px; 
+  
+	
+} */
+.kartu .infos .details {
+    position: absolute;
+    left: 0;
+    left: 0;
+    bottom: 0;
+    margin: 10px 0;
+    padding: 20px 24px;
+    letter-spacing: 1px;
+    color: #4e958b;
+    font-family: "Grotesque Black", sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+
+.kartu:hover .infos {
+    transform: translateY(-350px);
+}
+
+.kartu:hover .infos .seats,
+.kartu:hover .infos .txt,
+.kartu:hover .infos .details {
+    opacity: 1;
+}
+.k1 .thumb {
+    width: auto;
+    height: 350px;
+    background: url("../Image/pakferi.png") no-repeat center;
+   
+    background-size: cover;
+    border-radius: 3px;
+}
+.k2 .thumb{
+    background: url("../Image/pakdahliyus.png") no-repeat center;
+    width: auto;
+    height: 350px;
+ 
+    background-size: cover;
+    border-radius: 3px;
+}
+.k3 .thumb{
+    background: url("../Image/pakirsan2.png") no-repeat center;
+    width: auto;
+    height: 350px;
+    background-size: cover;
+    border-radius: 3px;
+}
+.k4 .thumb{
+    background: url("../Image/buknov.png") no-repeat center;
+    width: auto;
+    height: 350px;
+    background-size: cover;
+    border-radius: 3px;
+}
+.k5 .thumb{
+    background: url("../Image/pakrahyul.png") no-repeat center;
+    width: auto;
+    height: 350px;
+    background-size: cover;
+    border-radius: 3px;
+}
+.k6 .thumb{
+    background: url("../Image/buklinna.png") no-repeat center;
+    width: auto;
+    height: 350px;
+    background-size: cover;
+    border-radius: 3px;
+}
+.k7 .thumb{
+    background: url("../Image/paksalhazan.png") no-repeat center;
+    width: auto;
+    height: 350px;
+    background-size: cover;
+    border-radius: 3px;
+}
+.k8 .thumb{
+    background: url("../Image/pakyudi.png") no-repeat center;
+    width: auto;
+    height: 350px;
+    background-size: cover;
+    border-radius: 3px;
+}
+.k9 .thumb{
+    background: url("../Image/pakrizal.png") no-repeat center;
+    width: auto;
+    height: 350px;
+    background-size: cover;
+    border-radius: 3px;
+}
+.k10 .thumb{
+    background: url("../Image/pakedi.png") no-repeat center;
+    width: auto;
+    height: 350px;
+    background-size: cover;
+    border-radius: 3px;
+}
+.k11 .thumb{
+    background: url("../Image/bukdian.png") no-repeat center;
+    width: auto;
+    height: 350px;
+    background-size: cover;
+    border-radius: 3px;
+}
+.k12 .thumb{
+    background: url("../Image/bukdewi.png") no-repeat center;
+    width: auto;
+    height: 350px;
+    background-size: cover;
+    border-radius: 3px;
+}

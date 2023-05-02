@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -10,162 +9,70 @@ body {
     max-width: 100vw;
     overflow-x: hidden;
 }
-.activated{
-	color: #ffff00;
+.pdfbox{
+	justify-content: center; align-items: center; background-color: #ffff00;
 }
-button{
-    display: inline-block;
-    color:#060047;
-    text-decoration: none;
-    font-size: 20px;
-	font-weight: bold;
-    border: 1px solid #000000;
-    padding: 12px 34px;
-    background: transparent;
-    position: relative;
-
-}
-button:hover{
-    border: none;
-    background-color: #060047;
-    opacity: 100%;
-    color: rgb(255, 255, 255);
-    transition: 0.5s;
-}
-button:active{
-    background-color: #ffff00;
-	color: #000000;
-}
-.btnmid{
-	padding-top: 20px;
-	font-family: Poppins;
-	justify-content: center;
-	text-align: center;
-}
-.hberita{
-	color:rgb(0, 0, 0);
-}
-.hberita:hover{
-	color:#0051ff;
-	transition: 0.3s;
-}
-.respon1{
-	display: none;
-}
-.kolomkontak{
-	color: white;
-	font-family: Poppins;
-	font-size: 18px;
-	margin-left: 50px;
-	
-}
-.hkontak{
-	text-transform: uppercase;
-	font-size: 40px;
-	font-family: Tungsten;
-}
-.pkontak{
-	margin-top: 40px;
-}
-.kontak{
-
-	color: black;
-	background-color: #f2f2f2;
-	max-width: 90%; 
-	margin-left: auto; 
+.canvasbtn{
+	display: block;
+	margin-left: auto;
 	margin-right: auto;
+	padding: 30px;
+	width: 40%;
+	height:70%;
+	background-color: #d5d2d2;
 }
-/* ini dropdown */
-.navigation{
-	
+.isicanvas{
+	/* display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+	width: 40%;
+	height:70%;
+	background-color: #d5d2d2; */
 }
-.sub-menu{
+#pdf_canvas{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* display: flex;
+	width: 40%;
+	left: 30%; */
+}
+.bottom-left {
 	position: absolute;
-	background: #1c315e;
-	top: 68px;
-	line-height: 10px;
-	list-style: none;
-	border-radius: 0 0 8px 8px;
-	box-shadow: 0 5px 25px rgb(0 0 0/ 20%);
-	pointer-events: none;
-	transform: translateY(20px);
-	opacity: 0;
-	transition: 0.3s;
-	transition-property: transform, opacity;
-}
-.sub-item{
-	position: relative;
-	margin: 0;
-	padding: 0;
-	cursor: pointer;
-	box-shadow: inset 0px -30px 5px -30px rgba(255, 255, 255, 0.2);
-}
-.sub-item a{
-	color: #fff;
-	font-size: 13px;
-	text-decoration: none;
-	padding: 4px;
-	/* ini yg buat ke kiri */
-	margin-left: -25px;
-	margin-right: 10px;
-}
-.sub-item a:hover{
-	color: #ffff00;
-}
-.nav-item:hover .sub-menu{
-	pointer-events: all;
-	transform: translateY(0);
-	opacity: 1;
-}
-
-nav ul li {
-	display: flex;
-	line-height: 40px;
-	margin: 0 10px;
-	
-}
-.rsub-menu{
-	position: relative;
-	opacity: 1;
-	top: 0;
-	transform: translateX(10px);
-	border-radius: 5px;
-	overflow: hidden;
-	display: none;
-	list-style: none;
-	
-}
-.rnav-item:hover .rsub-menu{
-	transform: translateX(10px);
-
-}
-.rsub-item{
-	position: relative;
-	box-shadow: none;
-	
-}
-.rnav-item .rsub-menu .rsub-item:hover{
-	background: none;
-}
-.rnav-item .rsub-menu .rsub-item a:hover{
-	color:#ffff00;
-	transition: 0.3s;
-}
-.rsub-item a{
+	bottom: 8px;
+	left: 16px;
+	margin-left: 80px;
+	margin-bottom: 20px;
 	color: white;
 	font-family: Poppins;
-	text-align: center;
-	text-decoration: none;
+	font-size: 40px;
 	font-weight: 600;
-	font-size: 10px;
-	text-decoration: none;
-	/* ini yg buat ke kiri */
-	margin-left: -80px;
-	
+  }
+.home{
+    height: 100vh;
 }
-
-
-
+.contentt{
+    text-align: left;
+    width: 90%;
+    position: absolute;
+    font-family: Poppins;
+    padding-bottom: 5%;
+    top: 100%;   
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.contentt h1{
+	position: relative;
+    padding-bottom: 10px;
+    margin-top: 250px;
+    font-size: 40px;
+}
+.contentt p{
+    margin-bottom: 6%;
+    font-size: 20px;
+    font-family: Montserrat;
+}
 
 
 
@@ -226,18 +133,15 @@ nav ul li {
 
 .content {
 	padding: 15px 20px 15px 0px;
-	
 }
 
 .content h4 {
 	font-size: 15px;
 	color: #000000;
 	font-weight: 600;
-	gap: 100px;
 }
 
 .content p {
-	
 	color: #323030;
 	font-size: 14px;
 }
@@ -307,11 +211,22 @@ label.logo.pink{
 } */
 nav ul {
 	float: right;
+    padding-bottom: 20px;
 	margin-right: 20px;
-	transition: 0.5s;
+    
+	transition: 0.3s;
+}
+nav ul.pink{
+    margin-top: 20px;
+    padding-bottom: 0px;
 }
 
-
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 10px;
+	position: relative;
+}
 
 /* nav ul li::after{
     content: '';
@@ -329,7 +244,7 @@ nav ul {
 
 .slideshow {
 	background-color: transparent;
-	padding-top: 400px;
+	padding-top: 300px;
 
 }
 
@@ -356,17 +271,12 @@ nav ul li a {
 	width: 196px;
 }
 
-.logounri2 {
-	margin-right:355px; 
-	width: 196px;
-	display: none;
-}
 
 .logounri2.pink {
 	display: block;
-	 margin-right:260px; 
-	 width: 196px;
-	
+	margin-right: 195px;
+	/* width: 245px; height: 73px; */
+	width: 196px;
 }
 
 .nav-1:hover {
@@ -572,9 +482,7 @@ i.burger {
 	height: 3px;
 	display: block;
 }
-.teksgarisjudul{
-	font-size: 36px;
-}
+
 nav .openMenu {
 	font-size: 1rem;
 	margin: 20px;
@@ -639,13 +547,10 @@ form input {
 	text-align: center;
 	text-decoration: none;
 	font-weight: 600;
-	font-size: 12px;
+	font-size: 10px;
 	text-decoration: none;
 }
-.mobile-menu ul li a:hover{
-	color:#ffff00;
-	transition: 0.3s;
-}
+
 .mobile-menu ul li {
 	list-style: none;
 }
@@ -664,37 +569,20 @@ form input {
 	height: 11vh;
 }
 
-@media (min-width: 420px) and (max-width: 768px) {
-	.teksgarisjudul{
-		font-size: 20px;
-	}
-	button{
-		display: inline-block;
-		color:#060047;
-		text-decoration: none;
-		font-size: 16px;
-		font-weight: bold;
-		border: 1px solid #000000;
-		padding: 6px 17px;
-		background: transparent;
-		position: relative;
-	
-	}
-	.cards{
-		display: none;
-	}
-	.respon1{
-		display: block;
-	}
-	.hberita{
-		font-size: 16px;
-	}
-	.pberita{
-		font-size: 14px;
-	}
+@media (min-width: 420px) and (max-width: 730px) {
+	.bottom-left {
+		position: absolute;
+		bottom: 8px;
+		left: 16px;
+		margin-left: 30px;
+		margin-bottom: 20px;
+		color: white;
+		font-family: Poppins;
+		font-size: 25px;
+		font-weight: 600;
+	  }
 	.head-berita11 {
 		height: 50%;
-
 	}
 
 	#scrollmenu {
@@ -767,10 +655,14 @@ form input {
 	}
 
 	.garisjudul {
-		width: 10%;
+		width: 20%;
 		background-color: #000000;
-		height: 1.5px;
+		height: 3px;
 		display: block;
+	}
+
+	.teksgarisjudul {
+		font-size: 30px;
 	}
 
 	.single-box h2::after {
@@ -803,26 +695,20 @@ form input {
 	}
 
 	.karosel {
-		margin-top: 45px;
+		margin-top: 345px;
 	}
 
 	.logounri {
+
 		margin-left: 20px;
 		width: 171.5px;
 		height: 51.1px;
 	}
 
-	#carouselExampleAutoplaying {
-		position: absolute;
-		/* margin-top: 280px; */
-		margin-top: 68%;
-		padding-right: 5%;
-		padding-left: 5%;	
-	}
+
 	.slideshow {
 		background-color: #060047;
 		height: 200px;
-		padding-top: 300px;
 	}
 
 	.imgcontainer {
@@ -853,21 +739,24 @@ form input {
 		width: 50%;
 	}
 
+	#carouselExample {
+		margin-top: -550px;
+	}
 
 }
 
-
-
-@media (min-width: 768px) and (max-width: 992px)  {
-	.head-berita11{
-		margin-bottom: 50px;
-	}
-	.head-berita10{
+@media screen and (max-width: 992px) {
+	.bottom-left {
+		position: absolute;
+		bottom: 8px;
+		left: 16px;
+		margin-left: 80px;
 		margin-bottom: 20px;
-	}
-	.teksgarisjudul{
-		font-size: 26px;
-	}
+		color: white;
+		font-family: Poppins;
+		font-size: 30px;
+		font-weight: 600;
+	  }
 	.head-berita11 {
 		height: 50%;
 	}
@@ -976,11 +865,13 @@ form input {
 	.garisjudul {
 		width: 20%;
 		background-color: #000000;
-		height: 2px;
+		height: 3px;
 		display: block;
 	}
 
-	
+	.teksgarisjudul {
+		font-size: 30px;
+	}
 
 	.single-box h2::after {
 		content: "";
@@ -1025,9 +916,9 @@ form input {
 
 
 	.slideshow {
-		
-		height: 200px;
-		padding-top: 250px;
+		background-color: #060047;
+		height: 100px;
+
 	}
 
 	.imgcontainer {
@@ -1077,6 +968,17 @@ body::-webkit-scrollbar-thumb {
 
 
 @media screen and (max-width: 768px) {
+	.bottom-left {
+		position: absolute;
+		bottom: 8px;
+		left: 16px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		color: white;
+		font-family: Poppins;
+		font-size: 20px;
+		font-weight: 600;
+	  }
 	.cards {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -1103,24 +1005,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 500px) {
-	.teksgarisjudul{
-		font-size: 18px;
-	}
-	button{
-		font-size: 12px;
-	}
-	.cards{
-		display: none;
-	}
-	.respon1{
-		display: block;
-	}
-	.hberita{
-		font-size: 14px;
-	}
-	.pberita{
-		font-size: 12px;
-	}
 	.cards {
 		grid-template-columns: 1fr;
 	}
@@ -1155,48 +1039,24 @@ body::-webkit-scrollbar-thumb {
 
 	.slideshow {
 		background-color: #060047;
-		padding-top: 200px;
+		padding-top: 300px;
 		height: 20px;
-	}
-	#carouselExampleAutoplaying {
-		position: absolute;
-		/* margin-top: 280px; */
-		margin-top: 68%;
-		padding-right: 5%;
-		padding-left: 5%;	
-	
 	}
 }
 
 
 @media (min-width: 200px) and (max-width: 420px) {
-	.teksgarisjudul{
-		font-size: 16px;
-	}
-	button{
-		display: inline-block;
-		color:#060047;
-		text-decoration: none;
-		font-size: 10px;
-		font-weight: bold;
-		border: 1px solid #000000;
-		padding: 6px 17px;
-		background: transparent;
-		position: relative;
-	
-	}
-	.cards{
-		display: none;
-	}
-	.respon1{
-		display: block;
-	}
-	.hberita{
-		font-size: 12px;
-	}
-	.pberita{
-		font-size: 10px;
-	}
+	.bottom-left {
+		position: absolute;
+		bottom: 8px;
+		left: 16px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		color: white;
+		font-family: Poppins;
+		font-size: 15px;
+		font-weight: 600;
+	  }
 	.head-berita11 {
 		height: 50%;
 	}
@@ -1207,8 +1067,8 @@ body::-webkit-scrollbar-thumb {
 
 	.slideshow {
 		background-color: #060047;
-		padding-top: 0px;
-		height: 200px;
+		padding-top: 300px;
+		height: 20px;
 	}
 
 	.navbar1 {
@@ -1277,13 +1137,16 @@ body::-webkit-scrollbar-thumb {
 	}
 
 	.garisjudul {
-		width: 10%;
+		width: 20%;
 		background-color: #000000;
-		height: 2px;
+		height: 3px;
 		display: block;
 	}
 
-	
+	.teksgarisjudul {
+		font-size: 30px;
+	}
+
 	.single-box h2::after {
 		content: "";
 		height: 2px;
@@ -1354,16 +1217,8 @@ body::-webkit-scrollbar-thumb {
 		width: 50%;
 	}
 
-	#carouselExampleAutoplaying {
-		position: absolute;
-		/* margin-top: 280px; */
-		margin-top: 70%;
-		padding-right: 5%;
-		padding-left: 5%;	
+	#carouselExample {
+		margin-top: -550px;
 	}
-}
-@media (min-width: 499px) and (max-width: 655px) {
-.slideshow{
-	padding-top: 250px;
-}
+
 }

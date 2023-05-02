@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+@font-face{
+	font-family: Tungsten;
+	src: url(../font/Tungsten-Bold.otf);
+}
 * {
     padding: 0;
     margin: 0;
@@ -10,8 +14,9 @@ body {
     max-width: 100vw;
     overflow-x: hidden;
 }
-.activated{
-	color: #ffff00;
+
+.b{
+	padding-bottom: 100px;
 }
 button{
     display: inline-block;
@@ -33,14 +38,23 @@ button:hover{
     transition: 0.5s;
 }
 button:active{
-    background-color: #ffff00;
-	color: #000000;
+    background-color: rgb(255, 255, 255);
 }
 .btnmid{
-	padding-top: 20px;
 	font-family: Poppins;
 	justify-content: center;
 	text-align: center;
+}
+.post{
+    width: 50%;
+    display: block;
+    
+    margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.respon1{
+	display: none;
 }
 .hberita{
 	color:rgb(0, 0, 0);
@@ -49,8 +63,55 @@ button:active{
 	color:#0051ff;
 	transition: 0.3s;
 }
-.respon1{
+.respon2{
 	display: none;
+	padding-top: 20px;
+}
+#about{
+    padding: 70px 0px;
+    color: #ababab;
+    height: 75vh;
+    background-color: #1c315e;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 5%;
+    padding-left: 0px;
+}
+.about-col-1 h1{
+    font-weight: bold;
+}
+.about-col-2 img{
+    width: 100%;
+    border-radius: 0px;
+    transition: 1s;
+    filter:grayscale(80%);
+	
+}
+.about-col-2 img:hover{
+    filter: none;
+}
+.about-col-2{
+    flex-basis: 95%;
+    padding-left: 0px;
+}
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 100px;
+}
+.isi{
+    font-family: Poppins;
+    font-size: 20px;
+}
+.about-col-1 p{
+    color: white;
+    /* font-size: 19px;
+    font-weight: 300; */
 }
 .kolomkontak{
 	color: white;
@@ -67,7 +128,7 @@ button:active{
 .pkontak{
 	margin-top: 40px;
 }
-.kontak{
+.kontak1{
 
 	color: black;
 	background-color: #f2f2f2;
@@ -75,14 +136,66 @@ button:active{
 	margin-left: auto; 
 	margin-right: auto;
 }
-/* ini dropdown */
-.navigation{
+.kontak{
+	margin-top: 100px;
+	color: white;
+	background-color: #1c315e;
+	max-width: 85%; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+.kotak{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+	width: 70%;
+	height:70%;
+	background-color: #d5d2d2;
 	
+}
+.gbr{
+	/* position: relative;
+	display: flex;
+	margin-left: auto;
+	margin-bottom: auto; */
+	margin-right: 0px;
+	width: 41%;
+	float: right;
+}
+.gbr img{
+	width: 100%;
+}
+.kepala{
+	color: white;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 30px;
+	width: 70%;
+	height:70%;
+
+	font-family: Tungsten;
+	font-weight: bold;
+	font-size: 36px;
+	background-color: #1c315e;
+	text-transform: uppercase;
+}
+.download{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 0 100px 0;
+	width: 70%;
+	height:70%;
+
 }
 .sub-menu{
 	position: absolute;
 	background: #1c315e;
-	top: 68px;
+	top: 48px;
+	/* top: 68px; */
 	line-height: 10px;
 	list-style: none;
 	border-radius: 0 0 8px 8px;
@@ -118,12 +231,11 @@ button:active{
 	opacity: 1;
 }
 
-nav ul li {
-	display: flex;
-	line-height: 40px;
-	margin: 0 10px;
-	
+.mobile-menu ul li a:hover{
+	color:#ffff00;
+	transition: 0.3s;
 }
+
 .rsub-menu{
 	position: relative;
 	opacity: 1;
@@ -169,6 +281,76 @@ nav ul li {
 
 
 
+
+.mikrotik{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	padding: 40px;
+}
+.lab{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding: 40px;
+}
+
+.akreditasi{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height:100%;
+}
+.visimisi{
+	color: black;
+	font-family: Poppins;
+	font-size: 18px;
+	margin: 50px 70px 50px 70px; 
+	position: relative;
+	padding: 15px 30px 15px 30px;
+}
+
+.bottom-left {
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
+	margin-left: 80px;
+	margin-bottom: 20px;
+	color: white;
+	font-family: Poppins;
+	font-size: 40px;
+	font-weight: 600;
+  }
+.home{
+    height: 100vh;
+}
+.contentt{
+    text-align: left;
+    width: 90%;
+    position: absolute;
+    font-family: Poppins;
+    padding-bottom: 5%;
+    top: 100%;   
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.contentt h1{
+	position: relative;
+    padding-bottom: 10px;
+    margin-top: 250px;
+    font-size: 40px;
+}
+.contentt p{
+    margin-bottom: 6%;
+    font-size: 20px;
+    font-family: Montserrat;
+}
+
+
+
 .navbar1 {
 	display: none;
 }
@@ -179,9 +361,11 @@ nav ul li {
 
 .container {
 	width: 100%;
-	padding-bottom: 50px;
+	padding-bottom: 10px;
 }
-
+.c{
+	padding-top: 80px;
+}
 .blog-section {
 	width: 85%;
 	margin: 20px auto;
@@ -226,18 +410,15 @@ nav ul li {
 
 .content {
 	padding: 15px 20px 15px 0px;
-	
 }
 
 .content h4 {
 	font-size: 15px;
 	color: #000000;
 	font-weight: 600;
-	gap: 100px;
 }
 
 .content p {
-	
 	color: #323030;
 	font-size: 14px;
 }
@@ -264,9 +445,19 @@ footer {
 	top:0; */
 }
 
+.btn1{
+	border: #000000;
+	border-width: 6pt;
+	padding: 30px;
+	
+	text-decoration: none;
+	color: #060047;
+	margin-top :20px;
+}
 .btn {
 	background-color: #060047;
 	color: white;
+	margin-top :20px;
 }
 
 .btn:hover {
@@ -306,12 +497,29 @@ label.logo.pink{
     color: #F252AA;
 } */
 nav ul {
+    z-index: 100000;
 	float: right;
+    /* padding-bottom: 20px; */
 	margin-right: 20px;
-	transition: 0.5s;
+    
+	transition: 0.3s;
+}
+nav ul.pink{
+
+    margin-top: 20px;
+    padding-bottom: 0px;
 }
 
-
+nav ul li {
+    z-index: 100000;
+	/* display: inline-block;
+	line-height: 80px;
+	margin: 0 10px;
+	position: relative; */
+	display: flex;
+	line-height: 40px;
+	margin: 0 10px;
+}
 
 /* nav ul li::after{
     content: '';
@@ -329,7 +537,7 @@ nav ul {
 
 .slideshow {
 	background-color: transparent;
-	padding-top: 400px;
+	padding-top: 300px;
 
 }
 
@@ -342,6 +550,7 @@ nav ul li:hover::after {
 }
 
 nav ul li a {
+    z-index: 100000;
 	text-decoration: none;
 	color: rgb(247, 247, 247);
 	font-weight: 700;
@@ -356,17 +565,16 @@ nav ul li a {
 	width: 196px;
 }
 
-.logounri2 {
-	margin-right:355px; 
+.logounri2{
+	display: block;
+	margin-right: 360px; 
 	width: 196px;
-	display: none;
 }
-
 .logounri2.pink {
 	display: block;
-	 margin-right:260px; 
-	 width: 196px;
-	
+	margin-right: 195px;
+	/* width: 245px; height: 73px; */
+	width: 196px;
 }
 
 .nav-1:hover {
@@ -421,9 +629,11 @@ nav ul li a.pink {
 	font-size: 12px;
 	padding: 7px 13px;
 	text-transform: uppercase;
+    z-index: 100000;
 }
 
 .nav-2 {
+    z-index: 100000;
 	color: white;
 	font-family: Poppins;
 	text-align: center;
@@ -450,11 +660,13 @@ i.burger {
 }
 
 .navbar1 {
+    z-index: 100000;
 	font-family: Poppins;
 	font-weight: bold;
 }
 
 .navbar2 {
+    z-index: 100000;
 	font-family: Poppins;
 	font-weight: bold;
 }
@@ -565,15 +777,27 @@ i.burger {
 	margin-top: 700px;
 
 }
-
 .garisjudul {
 	width: 30%;
 	background-color: #000000;
 	height: 3px;
 	display: block;
 }
-.teksgarisjudul{
-	font-size: 36px;
+.teksgarisjudul1,.teksgarisjudul2 {
+	margin-left:40px;
+}
+.garisjudul1 {
+	width: 50%;
+	background-color: #000000;
+	height: 3px;
+	display: block;
+}
+.garisjudul2 {
+	width: 2%;
+	background-color: #ffffff;
+	height: 3px;
+	display: block;
+	margin-left: 60px;
 }
 nav .openMenu {
 	font-size: 1rem;
@@ -640,12 +864,9 @@ form input {
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 12px;
-	text-decoration: none;
+	text-decoration: none; 	
 }
-.mobile-menu ul li a:hover{
-	color:#ffff00;
-	transition: 0.3s;
-}
+
 .mobile-menu ul li {
 	list-style: none;
 }
@@ -663,11 +884,21 @@ form input {
 .head-berita11 {
 	height: 11vh;
 }
+.head-berita5{
+	height: 5vh;
+}
+.head-berita6{
+	height: 8vh;
+}
+.phead{
+	margin-bottom: 40px;
+}
+.head-berita5 h4, .head-berita6 h4{
+	font-size: 20px;
+}
 
-@media (min-width: 420px) and (max-width: 768px) {
-	.teksgarisjudul{
-		font-size: 20px;
-	}
+
+@media screen and (max-width: 992px) {
 	button{
 		display: inline-block;
 		color:#060047;
@@ -680,194 +911,47 @@ form input {
 		position: relative;
 	
 	}
-	.cards{
-		display: none;
+	.teksgarisjudul2 {
+		margin-left:40px;
+		font-size: 24px;
 	}
-	.respon1{
-		display: block;
+	.about-col-1 h1{
+		font-size: 30px;
 	}
-	.hberita{
-		font-size: 16px;
+	.about-col-1 h6{
+		font-size: 15px;
 	}
-	.pberita{
-		font-size: 14px;
+	.title{
+		font-size: 30px;
+		font-weight: 700;
+		margin-right: 100px;
 	}
-	.head-berita11 {
-		height: 50%;
-
+	.isi{
+		font-family: Poppins;
+		font-size: 15px;
 	}
-
-	#scrollmenu {
-		display: none;
+	.post{
+		width: 65%;
 	}
-
-	.navbar1 {
-		display: block;
+	.mikrotik{
+		width: 70%;
+		padding: 40px;
 	}
-
-	.navbar1.pink {
-		position: fixed;
-	}
-
-	.navbar2 {
-		display: none;
-	}
-
-	.mobile-menu {
-		display: flex;
-	}
-
-	nav .mainMenu {
-		height: 100vh;
-		position: fixed;
-		top: 0;
-		right: 0;
-		left: 0;
-		z-index: 10;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		background: #1c315e;
-		transition: top 1s ease;
-		display: none;
-	}
-
-	nav .mainMenu .closeMenu {
-		display: block;
-		position: absolute;
-		top: 20px;
-		right: 20px;
-	}
-
-	nav .openMenu {
-		display: block;
-	}
-
-	nav .mainMenu li a {
-		background: none;
-		color: #ffff00;
-		font-size: 1.6rem;
-	}
-
-	.single-box {
-		margin-bottom: 50px;
-		text-align: center;
-		justify-content: center;
-		padding: 9px;
-	}
-
-	.imgheader {
-		border: none;
-		outline: none;
-
-	}
-
-	.header {
-		background-color: #1c315e;
-	}
-
-	.garisjudul {
-		width: 10%;
-		background-color: #000000;
-		height: 1.5px;
-		display: block;
-	}
-
-	.single-box h2::after {
-		content: "";
-		height: 2px;
-		width: 220px;
-		background-color: #ffff00;
-		display: block;
-		position: relative;
-		left: 0px;
-		top: 15px;
-		bottom: 0px;
-		margin: auto;
-	}
-
-	.single-box img {
-		width: 50%;
-	}
-
-	.header {
-		background-color: #1c315e;
-	}
-
-	.kemitraan {
-		padding-bottom: 100px;
-		width: 75%;
-		justify-content: center;
-		display: block;
-		margin: 0 auto;
-	}
-
-	.karosel {
-		margin-top: 45px;
-	}
-
-	.logounri {
-		margin-left: 20px;
-		width: 171.5px;
-		height: 51.1px;
-	}
-
-	#carouselExampleAutoplaying {
-		position: absolute;
-		/* margin-top: 280px; */
-		margin-top: 68%;
-		padding-right: 5%;
-		padding-left: 5%;	
-	}
-	.slideshow {
-		background-color: #060047;
-		height: 200px;
-		padding-top: 300px;
-	}
-
-	.imgcontainer {
+	.lab{
 		width: 100%;
+		padding: 40px;
 	}
-
-	.single-box {
-		margin-bottom: 50px;
-		text-align: center;
-		justify-content: center;
-		padding: 9px;
-	}
-
-	.single-box h2::after {
-		content: "";
-		height: 2px;
-		width: 220px;
-		background-color: #ffff00;
-		display: block;
-		position: relative;
-		left: 0px;
-		top: 15px;
-		bottom: 0px;
-		margin: auto;
-	}
-
-	.single-box img {
-		width: 50%;
-	}
-
-
-}
-
-
-
-@media (min-width: 768px) and (max-width: 992px)  {
-	.head-berita11{
-		margin-bottom: 50px;
-	}
-	.head-berita10{
+	.bottom-left {
+		position: absolute;
+		bottom: 8px;
+		left: 16px;
+		margin-left: 80px;
 		margin-bottom: 20px;
-	}
-	.teksgarisjudul{
-		font-size: 26px;
-	}
+		color: white;
+		font-family: Poppins;
+		font-size: 30px;
+		font-weight: 600;
+	  }
 	.head-berita11 {
 		height: 50%;
 	}
@@ -976,11 +1060,13 @@ form input {
 	.garisjudul {
 		width: 20%;
 		background-color: #000000;
-		height: 2px;
+		height: 3px;
 		display: block;
 	}
-
 	
+	.teksgarisjudul {
+		font-size: 30px;
+	}
 
 	.single-box h2::after {
 		content: "";
@@ -1025,9 +1111,9 @@ form input {
 
 
 	.slideshow {
-		
-		height: 200px;
-		padding-top: 250px;
+		background-color: #060047;
+		height: 100px;
+
 	}
 
 	.imgcontainer {
@@ -1042,6 +1128,12 @@ form input {
 		width: 100%;
 		justify-content: center;
 		align-items: center;
+	}
+	 .head-berita11{
+		margin-bottom: 50px;
+	}
+	.head-berita10{
+		margin-bottom: 20px;
 	}
 
 }
@@ -1075,109 +1167,30 @@ body::-webkit-scrollbar-thumb {
 	font-size: 20px;
 }
 
-
-@media screen and (max-width: 768px) {
-	.cards {
-		grid-template-columns: repeat(2, 1fr);
+@media (min-width: 420px) and (max-width: 768px) {
+	.about-col-1 h1{
+		font-size: 20px;
 	}
-
-	.respon {
-		display: none;
+	.about-col-1 h6{
+		font-size: 10px;
 	}
-
-	.sendiri {
-		display: block;
-		width: 100%;
+	.title{
+		font-size: 20px;
+		font-weight: 700;
+		margin-right: 100px;
 	}
-
-	.kotakbiru {
-		background-color: #060047;
-		text-align: center;
-		color: white;
-		padding: 0px;
-		width: 100%;
-		justify-content: center;
-		align-items: center;
+	.isi{
+		font-family: Poppins;
+		font-size: 10px;
 	}
-
-}
-
-@media screen and (max-width: 500px) {
-	.teksgarisjudul{
-		font-size: 18px;
-	}
-	button{
-		font-size: 12px;
-	}
-	.cards{
-		display: none;
-	}
-	.respon1{
-		display: block;
-	}
-	.hberita{
-		font-size: 14px;
-	}
-	.pberita{
-		font-size: 12px;
-	}
-	.cards {
-		grid-template-columns: 1fr;
-	}
-
-	.head-berita10 {
-		height: 50%;
-	}
-
-	.head-berita11 {
-		height: 50%;
-	}
-
-	.respon {
-		display: none;
-	}
-
-	.sendiri {
-		display: block;
-		width: 100%;
-	}
-
-	.kotakbiru {
-		background-color: #060047;
-		text-align: center;
-		color: white;
-		padding: 0px;
-		display: grid;
-		width: 100%;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.slideshow {
-		background-color: #060047;
-		padding-top: 200px;
-		height: 20px;
-	}
-	#carouselExampleAutoplaying {
-		position: absolute;
-		/* margin-top: 280px; */
-		margin-top: 68%;
-		padding-right: 5%;
-		padding-left: 5%;	
-	
-	}
-}
-
-
-@media (min-width: 200px) and (max-width: 420px) {
-	.teksgarisjudul{
-		font-size: 16px;
+	.post{
+		width: 75%;
 	}
 	button{
 		display: inline-block;
 		color:#060047;
 		text-decoration: none;
-		font-size: 10px;
+		font-size: 16px;
 		font-weight: bold;
 		border: 1px solid #000000;
 		padding: 6px 17px;
@@ -1185,30 +1198,116 @@ body::-webkit-scrollbar-thumb {
 		position: relative;
 	
 	}
+	.c{
+		padding-top: 0px;
+	}
 	.cards{
 		display: none;
+	}
+	.respon2{
+		display: block;
+	}
+	.hberita{
+		font-size: 16px;
+	}
+	.pberita{
+		font-size: 12px;
+	}
+	.gmap_canvas{
+		padding: 20px 0 ;
+	}
+	.teksgarisjudul1 {
+		margin-left:40px;
+		font-size: 24px;
+	}
+	.teksgarisjudul2 {
+		margin-left:40px;
+		font-size: 24px;
+	}
+	.garisjudul1 {
+		width: 40%;
+		background-color: #000000;
+		height: 3px;
+		display: block;
+	}
+	.garisjudul2 {
+		width: 1%;
+		background-color: #ffffff;
+		height: 3px;
+		display: block;
+		margin-left: 20px;
+	}
+	.special1{
+		display:none;
 	}
 	.respon1{
 		display: block;
 	}
-	.hberita{
-		font-size: 12px;
+	.kolomkontak{
+		color: white;
+		font-family: Poppins;
+		font-size: 18px;
+		margin-left: 15px;
+		
 	}
-	.pberita{
+	.hkontak{
+		text-transform: uppercase;
+		font-size: 40px;
+		font-family: Tungsten;
+	}
+	.pkontak{
+		margin-top: 40px;
+	}
+	.kontak{
+		margin-top: 100px;
+		color: white;
+		background-color: #1c315e;
+		max-width: 65%; 
+		margin-left: auto; 
+		margin-right: auto;
+	}
+	.kepala {
+		font-size: 20px;
+	}
+	.kotak{
+		padding: 20px;
+	}
+	.mikrotik{
+		width: 70%;
+		padding: 40px;
+	}
+	.lab{
+		width: 100%;
+		padding: 40px;
+	}
+	.btn{
 		font-size: 10px;
 	}
+	.visimisi{
+		margin: 20px; 
+		position: relative;
+		padding: 20px;
+	}
+	.visimisi p, .visimisi li{
+		font-size: 16px;
+	}
+	.bottom-left {
+		position: absolute;
+		bottom: 8px;
+		left: 16px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		color: white;
+		font-family: Poppins;
+		font-size: 20px;
+		font-weight: 600;
+	  }
 	.head-berita11 {
 		height: 50%;
 	}
 
 	#scrollmenu {
 		display: none;
-	}
-
-	.slideshow {
-		background-color: #060047;
-		padding-top: 0px;
-		height: 200px;
 	}
 
 	.navbar1 {
@@ -1277,13 +1376,16 @@ body::-webkit-scrollbar-thumb {
 	}
 
 	.garisjudul {
-		width: 10%;
+		width: 20%;
 		background-color: #000000;
-		height: 2px;
+		height: 3px;
 		display: block;
 	}
 
-	
+	.teksgarisjudul {
+		font-size: 30px;
+	}
+
 	.single-box h2::after {
 		content: "";
 		height: 2px;
@@ -1320,8 +1422,416 @@ body::-webkit-scrollbar-thumb {
 	.logounri {
 
 		margin-left: 20px;
-		width: 171.5px;
-		height: 51.1px;
+		width: 122.5px;
+		height: 36.5px;
+	}
+
+
+	.slideshow {
+		background-color: #060047;
+		height: 200px;
+	}
+
+	.imgcontainer {
+		width: 100%;
+	}
+
+	.single-box {
+		margin-bottom: 50px;
+		text-align: center;
+		justify-content: center;
+		padding: 9px;
+	}
+
+	.single-box h2::after {
+		content: "";
+		height: 2px;
+		width: 220px;
+		background-color: #ffff00;
+		display: block;
+		position: relative;
+		left: 0px;
+		top: 15px;
+		bottom: 0px;
+		margin: auto;
+	}
+
+	.single-box img {
+		width: 50%;
+	}
+
+	#carouselExample {
+		margin-top: -550px;
+	}
+	.cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.respon {
+		display: none;
+	}
+
+	.sendiri {
+		display: block;
+		width: 100%;
+	}
+
+	.kotakbiru {
+		background-color: #060047;
+		text-align: center;
+		color: white;
+		padding: 0px;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+
+
+@media screen and (max-width: 500px) {
+	.bottom-left {
+		bottom: 3px;
+		margin-bottom: 0px;
+	}
+
+	.about-col-1 h1{
+		font-size: 15px;
+		margin-bottom: 0px;
+	}
+	.about-col-1 h6{
+		font-size: 6px;
+	}
+	.title{
+		font-size: 15px;
+		font-weight: 700;
+		margin-right: 60px;
+	}
+	.isi{
+		font-family: Poppins;
+		font-size: 6px;
+	}
+	.post{
+		width: 70%;
+	}
+	button{
+		font-size: 12px;
+	}
+	.c{
+		padding-top: 0px;
+	}
+	.cards{
+		display: none;
+	}
+	.respon2{
+		display: block;
+	}
+	.hberita{
+		font-size: 14px;
+	}
+	.pberita{
+		font-size: 12px;
+	}
+	.gmap_canvas{
+		padding: 20px 0 ;
+	}
+	.teksgarisjudul1 {
+		margin-left:30px;
+		font-size: 18px;
+	}
+	.garisjudul1 {
+		width: 30%;
+		background-color: #000000;
+		height: 2px;
+		display: block;
+	}
+	.garisjudul2 {
+		width: 1%;
+		background-color: #ffffff;
+		height: 3px;
+		display: block;
+		margin-left: 20px;
+	}
+	.special1{
+		display:none;
+	}
+	.respon1{
+		display: block;
+	}
+	.kolomkontak{
+		color: white;
+		font-family: Poppins;
+		font-size: 14px;
+		margin-left: 15px;
+		
+	}
+	.hkontak{
+		text-transform: uppercase;
+		font-size: 30px;
+		font-family: Tungsten;
+	}
+	.pkontak{
+		margin-top: 40px;
+	}
+	.kontak{
+		margin-top: 100px;
+		color: white;
+		background-color: #1c315e;
+		max-width: 65%; 
+		margin-left: auto; 
+		margin-right: auto;
+	}
+	.cards {
+		grid-template-columns: 1fr;
+	}
+
+	.head-berita10 {
+		height: 50%;
+	}
+
+	.head-berita11 {
+		height: 50%;
+	}
+
+	.respon {
+		display: none;
+	}
+
+	.sendiri {
+		display: block;
+		width: 100%;
+	}
+
+	.kotakbiru {
+		background-color: #060047;
+		text-align: center;
+		color: white;
+		padding: 0px;
+		display: grid;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.slideshow {
+		background-color: #060047;
+		padding-top: 300px;
+		height: 20px;
+	}
+}
+
+
+@media (min-width: 200px) and (max-width: 420px) {	
+	.about-col-1 h1{
+		font-size: 10px;
+		margin-bottom: 0px;
+	}
+	.about-col-1 h6{
+		font-size: 6px;
+	}
+	.title{
+		font-size: 10px;
+		font-weight: 700;
+		margin-right: 50px;
+	}
+	.isi{
+		font-family: Poppins;
+		font-size: 6px;
+	}
+	.post{
+		width: 90%;
+	}
+	button{
+		display: inline-block;
+		color:#060047;
+		text-decoration: none;
+		font-size: 10px;
+		font-weight: bold;
+		border: 1px solid #000000;
+		padding: 6px 17px;
+		background: transparent;
+		position: relative;
+	
+	}
+	.c{
+		padding-top: 0px;
+	}
+	.cards{
+		display: none;
+	}
+	.respon2{
+		display: block;
+	}
+	.hberita{
+		font-size: 12px;
+	}
+	.pberita{
+		font-size: 10px;
+	}
+	.kepala {
+		font-size: 14px;
+	}
+	.kotak{
+		padding: 15px;
+	}
+	.mikrotik{
+		width: 90%;
+		padding: 40px;
+	}
+	.lab{
+		width: 100%;
+		padding: 40px;
+	}
+	.btn{
+		font-size: 8px;
+	}
+	.visimisi{
+		margin: 20px; 
+		position: relative;
+		padding: 20px;
+	}
+	.visimisi p, .visimisi li{
+		font-size: 14px;
+	}
+	.bottom-left {
+		position: absolute;
+		bottom: 3px;
+		left: 16px;
+		margin-left: 20px;
+		margin-bottom: 0px;
+		color: white;
+		font-family: Poppins;
+		font-size: 15px;
+		font-weight: 600;
+	  }
+	.head-berita11 {
+		height: 50%;
+	}
+
+	#scrollmenu {
+		display: none;
+	}
+
+	.slideshow {
+		background-color: #060047;
+		padding-top: 300px;
+		height: 20px;
+	}
+
+	.navbar1 {
+		display: block;
+	}
+
+	.navbar1.pink {
+		position: fixed;
+	}
+
+	.navbar2 {
+		display: none;
+	}
+
+	.mobile-menu {
+		display: flex;
+	}
+
+	nav .mainMenu {
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: #1c315e;
+		transition: top 1s ease;
+		display: none;
+	}
+
+	nav .mainMenu .closeMenu {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+	nav .openMenu {
+		display: block;
+	}
+
+	nav .mainMenu li a {
+		background: none;
+		color: #ffff00;
+		font-size: 1.6rem;
+	}
+
+	.single-box {
+		margin-bottom: 50px;
+		text-align: center;
+		justify-content: center;
+		padding: 9px;
+	}
+
+	.imgheader {
+		border: none;
+		outline: none;
+
+	}
+
+	.header {
+		background-color: #1c315e;
+	}
+
+	.garisjudul {
+		width: 20%;
+		background-color: #000000;
+		height: 3px;
+		display: block;
+	}
+
+	.teksgarisjudul {
+		font-size: 30px;
+	}
+
+	.single-box h2::after {
+		content: "";
+		height: 2px;
+		width: 220px;
+		background-color: #ffff00;
+		display: block;
+		position: relative;
+		left: 0px;
+		top: 15px;
+		bottom: 0px;
+		margin: auto;
+	}
+
+	.single-box img {
+		width: 50%;
+	}
+
+	.header {
+		background-color: #1c315e;
+	}
+
+	.kemitraan {
+		padding-bottom: 100px;
+		width: 75%;
+		justify-content: center;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.karosel {
+		margin-top: 345px;
+	}
+
+	.logounri {
+
+		margin-left: 20px;
+		width: 122.5px;
+		height: 36.5px;
 	}
 
 
@@ -1354,16 +1864,56 @@ body::-webkit-scrollbar-thumb {
 		width: 50%;
 	}
 
-	#carouselExampleAutoplaying {
-		position: absolute;
-		/* margin-top: 280px; */
-		margin-top: 70%;
-		padding-right: 5%;
-		padding-left: 5%;	
+	#carouselExample {
+		margin-top: -550px;
 	}
+
 }
-@media (min-width: 499px) and (max-width: 655px) {
-.slideshow{
-	padding-top: 250px;
-}
-}
+/* @media screen and (max-width: 768px) {
+	.kepala {
+		font-size: 20px;
+	}
+	.mikrotik{
+		width: 70%;
+		padding: 40px;
+	}
+	.lab{
+		width: 100%;
+		padding: 40px;
+	}
+	.visimisi{
+		margin: 20px; 
+		position: relative;
+		padding: 20px;
+	}
+	.bottom-left {
+		position: absolute;
+		bottom: 8px;
+		left: 16px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		color: white;
+		font-family: Poppins;
+		font-size: 20px;
+		font-weight: 600;
+	  }
+	.cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.respon {
+		display: none;
+	}
+	.sendiri {
+		display: block;
+		width: 100%;
+	}
+	.kotakbiru {
+		background-color: #060047;
+		text-align: center;
+		color: white;
+		padding: 0px;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+} */
