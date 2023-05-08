@@ -3,6 +3,10 @@
 	font-family: Tungsten;
 	src: url(../font/Tungsten-Bold.otf);
 }
+@font-face{
+	font-family: Bebas;
+	src: url(../font/BebasNeue-Regular.ttf);
+}
 * {
     padding: 0;
     margin: 0;
@@ -13,6 +17,14 @@ html,
 body {
     max-width: 100vw;
     overflow-x: hidden;
+}
+.visimisi span{
+	color: #2366f5;
+	font-weight: bold;
+}
+.biru{
+	color: #2366f5;
+	font-weight: bold;
 }
 .gmap_canvas{
 	justify-content: center; 
@@ -73,12 +85,12 @@ body {
 .hkontak{
 	text-transform: uppercase;
 	font-size: 40px;
-	font-family: Tungsten;
+	font-family: Bebas;
 }
 .hkontak1{
 	text-transform: uppercase;
 	font-size: 40px;
-	font-family: Tungsten;
+	font-family: Bebas;
 }
 .pkontak{
 	margin-top: 40px;
@@ -133,7 +145,7 @@ body {
 	width: 70%;
 	height:70%;
 
-	font-family: Tungsten;
+	font-family: Bebas;
 	font-weight: bold;
 	font-size: 36px;
 	background-color: #1c315e;
@@ -786,6 +798,8 @@ form input {
 	width: 100vw;
 	background-color: #1c315e;
 	transition: all .5s ease-in-out;
+	overflow: auto;
+	max-height: 100vh;
 }
 
 .mobile-menu span {
@@ -1098,12 +1112,12 @@ body::-webkit-scrollbar-thumb {
 	.hkontak{
 		text-transform: uppercase;
 		font-size: 40px;
-		font-family: Tungsten;
+		font-family: Bebas;
 	}
 	.hkontak1{
 		text-transform: uppercase;
 		font-size: 30px;
-		font-family: Tungsten;
+		font-family: Bebas;
 	}
 	.pkontak{
 		margin-top: 40px;
@@ -1392,12 +1406,12 @@ body::-webkit-scrollbar-thumb {
 	.hkontak{
 		text-transform: uppercase;
 		font-size: 30px;
-		font-family: Tungsten;
+		font-family: Bebas;
 	}
 	.hkontak1{
 		text-transform: uppercase;
 		font-size: 24px;
-		font-family: Tungsten;
+		font-family: Bebas;
 	}
 	.pkontak{
 		margin-top: 40px;

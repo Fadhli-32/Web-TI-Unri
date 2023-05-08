@@ -13,11 +13,17 @@ body {
 .activated{
 	color: #ffff00;
 }
+.carousel-control-prev:hover{
+	background-color: transparent;
+}
+.carousel-control-next:hover{
+	background-color: transparent;
+}
 button{
     display: inline-block;
     color:#060047;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
 	font-weight: bold;
     border: 1px solid #000000;
     padding: 12px 34px;
@@ -329,7 +335,7 @@ nav ul {
 
 .slideshow {
 	background-color: transparent;
-	padding-top: 400px;
+	padding-top: 200px;
 
 }
 
@@ -623,6 +629,9 @@ form input {
 	width: 100vw;
 	background-color: #1c315e;
 	transition: all .5s ease-in-out;
+	
+	overflow: auto;
+	max-height: 100vh;
 }
 
 .mobile-menu span {
@@ -1365,5 +1374,10 @@ body::-webkit-scrollbar-thumb {
 @media (min-width: 499px) and (max-width: 655px) {
 .slideshow{
 	padding-top: 250px;
+}
+}
+@media (min-width: 992px) and (max-width: 1600px) {
+.slideshow{
+	padding-top: 365px;
 }
 }

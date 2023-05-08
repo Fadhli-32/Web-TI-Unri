@@ -15,6 +15,53 @@ body {
     overflow-x: hidden;
 }
 
+.share{
+	margin-bottom: 50px;
+}
+
+.media-icons{
+	z-index: 888;
+	position: absolute;
+	left: 30px;
+	display: flex;
+	flex-direction: column;
+	transition: 0.5s ease;
+  }
+  
+   .media-icons a{
+	color: #000000;
+	font-size: 1.6em;
+	transition: 0.3s ease;
+  }
+  
+  .media-icons a:not(:last-child){
+	margin-bottom: 20px;
+  }
+  
+  .media-icons a:hover{
+	transform: scale(1.3);
+  }	
+
+  .media-share{
+	gap: 20px;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	transition: 0.5s ease;
+  }
+  .media-share a{
+	color: #000000;
+	font-size: 1.6em;
+	transition: 0.3s ease;
+  }
+  
+  .media-share a:not(:last-child){
+	margin-bottom: 20px;
+  }
+  
+  .media-share a:hover{
+	transform: scale(1.3);
+  }	
 .b{
 	padding-bottom: 100px;
 }
@@ -22,7 +69,7 @@ button{
     display: inline-block;
     color:#060047;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
 	font-weight: bold;
     border: 1px solid #000000;
     padding: 12px 34px;
@@ -65,7 +112,7 @@ button:active{
 }
 .respon2{
 	display: none;
-	padding-top: 20px;
+	/* padding-top: 20px; */
 }
 #about{
     padding: 70px 0px;
@@ -362,6 +409,10 @@ button:active{
 .container {
 	width: 100%;
 	padding-bottom: 10px;
+}
+.container1 {
+	width: 100%;
+	margin-bottom: 0px;
 }
 .c{
 	padding-top: 80px;
@@ -847,6 +898,9 @@ form input {
 	width: 100vw;
 	background-color: #1c315e;
 	transition: all .5s ease-in-out;
+
+	overflow: auto;
+	max-height: 100vh;
 }
 
 .mobile-menu span {
