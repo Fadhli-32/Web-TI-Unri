@@ -16,6 +16,9 @@ body {
 	align-items: center;
   justify-content: center;
 }
+.pictitle{
+	display: none;
+}
 .ulsize{
 
 }
@@ -1575,6 +1578,14 @@ body::-webkit-scrollbar-thumb {
 
 
 @media screen and (max-width: 500px) {
+	/* .pictitle{
+		display: block;
+	}
+	.pictitleon{
+		display: none;
+	} */
+
+
 	.ulsize{
 		height:110px;
 	}
