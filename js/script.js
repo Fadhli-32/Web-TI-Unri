@@ -46,10 +46,10 @@ $(window).scroll(function(){
 		
     if($(window).scrollTop()){
       // document.getElementById("scrollmenu").style.position = "fixed";
-        $("nav,nav ul, nav ul li, nav ul li a, .search, .logounri2, .navbar2").addClass("pink");
+        $("nav,nav ul, nav ul li, nav ul li a, .search, .logounri2, .navbar2, .flexbasis1, .flexbasis2").addClass("pink");
     }else{
       // $("nav, scrollmenu").style.position = "relative";
-        $("nav,nav ul, nav ul li, nav ul li a, .search, .logounri2, .navbar2").removeClass("pink");
+        $("nav,nav ul, nav ul li, nav ul li a, .search, .logounri2, .navbar2, .flexbasis1, .flexbasis2").removeClass("pink");
     }
 })
 

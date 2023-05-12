@@ -752,23 +752,6 @@ nav ul li a {
 	/* border-radius: 3px; */
 }
 
-.logounri {
-	margin-left: 80px;
-	/* width: 245px; height: 73px; */
-	width: 196px;
-}
-
-.logounri2{
-	display: block;
-	margin-right: 360px; 
-	width: 196px;
-}
-.logounri2.pink {
-	display: block;
-	margin-right: 195px;
-	/* width: 245px; height: 73px; */
-	width: 196px;
-}
 
 .nav-1:hover {
 	color: #ffff00;
@@ -1011,6 +994,106 @@ form input {
 	border: none;
 	outline: none;
 }
+
+
+
+.tombol-search1{
+	
+	border-radius: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 0px;
+}
+.tombol-search1 input{ 
+	color:black;
+	width:1400px;
+	height: 0px;
+	border: none;
+	outline: none;
+}
+.i-search {
+	margin-left: 0px;
+	margin-right: 10px;
+}
+.tombol-search{
+	z-index: 1;
+	position: absolute;
+	background: #1c315e;
+	top: 60px;
+	/* top: 68px; */
+	width: 100%;
+	left: 0;
+	right: 0;
+	
+	list-style: none;
+	border-radius: 0 0 8px 8px;
+	pointer-events: none;
+	transform: translateY(20px);
+	opacity: 0;
+	transition: 0.3s;
+	transition-property: transform, opacity;
+}
+.tombol-search-item{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	box-shadow: inset 0px -30px 5px -30px rgba(255, 255, 255, 0.2);
+}
+.tombol-search-item a{
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+	padding: 4px;
+	/* ini yg buat ke kiri */
+	margin-left: -25px;
+	margin-right: 10px;
+}
+
+.nav-item:hover .tombol-search{
+	pointer-events: all;
+	transform: translateY(0);
+	opacity: 1;
+}
+.logounri {
+	margin-left: 80px;
+	/* width: 245px; height: 73px; */
+	width: 196px;
+}
+.flexbasis1{
+	flex-basis: 20%;
+}
+
+.logounri2{
+	display: block;
+	position: relative;
+	
+	width: 196px;
+}
+.logounri2.pink {
+	margin-top: 25px;
+	display: block;
+	position: relative;
+	
+	width: 196px;
+	/* display: block;
+	margin-right: 195px;
+	
+	width: 196px;
+} */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .mobile-menu {
 	text-decoration: none;
