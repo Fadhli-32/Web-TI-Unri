@@ -1235,7 +1235,7 @@ body::-webkit-scrollbar-thumb {
 		font-size: 10px;
 	}
 	.visimisi{
-		margin: 20px; 
+		margin: 20px 3px;  
 		position: relative;
 		padding: 20px;
 	}
@@ -1570,7 +1570,7 @@ body::-webkit-scrollbar-thumb {
 		font-size: 8px;
 	}
 	.visimisi{
-		margin: 20px; 
+		margin: 20px 3px; 
 		position: relative;
 		padding: 20px;
 	}

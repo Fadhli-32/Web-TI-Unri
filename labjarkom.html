@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/profil.css">
+    <link rel="stylesheet" href="css/laboratorium.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -214,8 +216,22 @@
       </nav>
     </div>
 
+
+    <div class="kotakgambar1">
+      <div class="wrapper1">
+        <i id="left1" class="fa-solid fa-angle-left"></i>
+        <div class="carousel1">
+          <img src="Image/labjarkom.png" alt="img" draggable="false" class="img1">
+          <img src="Image/labjarkom.png" alt="img" draggable="false" class="img1">
+          <img src="Image/labjarkom.png" alt="img" draggable="false" class="img1">
+          <img src="Image/labjarkom.png" alt="img" draggable="false" class="img1">
+        
+        </div>
+        <i id="right1" class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
+    
 <div class="visimisi" >
-    <img class="lab" src="Image/labjarkom.png "alt="">
     <ol class="ol" style="margin-left: -20px;">
         <p><span>Laboratorium Komputer dan Jaringan</span> ini digunakan untuk kegiatan pratikum mahasiswa pada matakuliah seputar jaringan komputer. Laboratorium Komputer dan Jaringan terdapat beberapa komputer dan juga peralatan yang dibutuhkan untuk kegiatan pratikum dan riset. Laboratorium Komputer dan Jaringan dikelola oleh:</p>
         <ul>
@@ -281,5 +297,80 @@
       <script src="js/bootstrap.bundle.js"></script>
     
       <script src="./js/script.js"> </script>
+      <script>
+        const carousel1 = document.querySelector(".carousel1"),
+firstimg1 = carousel1.querySelectorAll("img")[0],
+arrowicons1 = document.querySelectorAll(".wrapper1 i");
+
+let isdragstart1 = false, isdragging1 = false, prevpagex1, prevScrollLeft1, positionDiff1;
+
+const showHideIcons1 = () => {
+    // showing and hiding prev/next icon according to carousel1 scroll left value
+    let scrollwidth1 = carousel1.scrollwidth1 - carousel1.clientWidth; // getting max scrollable width
+    arrowicons1[0].style.display = carousel1.scrollLeft == 0 ? "none" : "block";
+    arrowicons1[1].style.display = carousel1.scrollLeft == scrollwidth1 ? "none" : "block";
+}
+
+arrowicons1.forEach(icon => {
+    icon.addEventListener("click", () => {
+        let firstimg1Width = firstimg1.clientWidth + 14; // getting first img width & adding 14 margin value
+        // if clicked icon is left, reduce width value from the carousel1 scroll left else add to it
+        carousel1.scrollLeft += icon.id == "left1" ? -firstimg1Width : firstimg1Width;
+        setTimeout(() => showHideIcons1(), 60); // calling showHideIcons after 60ms
+    });
+});
+
+const autoSlide1 = () => {
+    // if there is no image left to scroll then return from here
+    if(carousel1.scrollLeft - (carousel1.scrollwidth1 - carousel1.clientWidth) > -1 || carousel1.scrollLeft <= 0) return;
+
+    positionDiff1 = Math.abs(positionDiff1); // making positionDiff1 value to positive
+    let firstimg1Width = firstimg1.clientWidth + 14;
+    // getting difference value that needs to add or reduce from carousel1 left to take middle img center
+    let valDifference1 = firstimg1Width - positionDiff1;
+
+    if(carousel1.scrollLeft > prevScrollLeft1) { // if user is scrolling to the right
+        return carousel1.scrollLeft += positionDiff1 > firstimg1Width / 3 ? valDifference1 : -positionDiff1;
+    }
+    // if user is scrolling to the left
+    carousel1.scrollLeft -= positionDiff1 > firstimg1Width / 3 ? valDifference1 : -positionDiff1;
+}
+
+const dragStart1 = (e) => {
+    // updatating global variables value on mouse down event
+    isdragstart1 = true;
+    prevpagex1 = e.pageX || e.touches[0].pageX;
+    prevScrollLeft1 = carousel1.scrollLeft;
+}
+
+const dragging1 = (e) => {
+    // scrolling images/carousel1 to left according to mouse pointer
+    if(!isdragstart1) return;
+    e.preventDefault();
+    isdragging1 = true;
+    carousel1.classList.add("dragging");
+    positionDiff1 = (e.pageX || e.touches[0].pageX) - prevpagex1;
+    carousel1.scrollLeft = prevScrollLeft1 - positionDiff1;
+    showHideIcons1();
+}
+
+const dragStop1 = () => {
+    isdragstart1 = false;
+    carousel1.classList.remove("dragging");
+
+    if(!isdragging1) return;
+    isdragging1 = false;
+    autoSlide1();
+}
+
+carousel1.addEventListener("mousedown", dragStart1);
+carousel1.addEventListener("touchstart", dragStart1);
+
+document.addEventListener("mousemove", dragging1);
+carousel1.addEventListener("touchmove", dragging1);
+
+document.addEventListener("mouseup", dragStop1);
+carousel1.addEventListener("touchend", dragStop1);
+      </script>
     </body>
   </html>

@@ -1425,7 +1425,7 @@ body::-webkit-scrollbar-thumb {
 		font-size: 10px;
 	}
 	.visimisi{
-		margin: 20px; 
+		margin: 20px 3px; 
 		position: relative;
 		padding: 20px;
 	}
@@ -1764,14 +1764,14 @@ body::-webkit-scrollbar-thumb {
 
 @media (min-width: 200px) and (max-width: 420px) {	
 	.about-col-1 h1{
-		font-size: 10px;
+		font-size: 12px;
 		margin-bottom: 0px;
 	}
 	.about-col-1 h6{
 		font-size: 6px;
 	}
 	.title{
-		font-size: 10px;
+		font-size: 13.5px;
 		font-weight: 700;
 		margin-right: 50px;
 	}
@@ -1827,7 +1827,7 @@ body::-webkit-scrollbar-thumb {
 		font-size: 8px;
 	}
 	.visimisi{
-		margin: 20px; 
+		margin: 20px 3px; 
 		position: relative;
 		padding: 20px;
 	}
