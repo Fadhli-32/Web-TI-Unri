@@ -1,0 +1,48 @@
+/* kurikulum */
+.kurikulum{
+    height: 100%;
+  }
+  
+  .kurikulum-konten{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .kurikulum-konten embed{
+    width: 71%;
+    height: 500px;
+    border: 3px solid #1a1919;
+  }
+  .tombol-download{
+    display: none;
+  }
+  @media(max-width:750px){
+    .tombol-download p{
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    .tombol-download{
+      display: block;
+      margin-top: 0;
+      margin-left: 10%;
+      margin-bottom: 50px;
+    }
+    .kurikulum-konten embed{
+      width: 80%;
+      height: 300px;
+    }
+  }
+  @media(max-width:500px){
+    .tombol-download p{
+      font-size: 14px;
+      margin: 10px 0;
+    }
+  }
+  @media(max-width:300px){
+    .tombol-download p{
+      font-size: 12px;
+      margin: 10px 0;
+    }
+  }
