@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/active-nav.css">
     <link rel="stylesheet" href="css/pdf.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet"
@@ -100,10 +101,10 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-2" href="#">Akademik</a>
+                  <a class="aktif nav-2" href="#">Akademik</a>
                   <ul class="sub-menu">
                     <li class="sub-item"><a href="kalender.html">Kalender Akademik</a></li>
-                    <li class="sub-item"><a href="kurikulum.html">Kurikulum</a></li>
+                    <li class="sub-item"><a class="aktif" href="kurikulum.html">Kurikulum</a></li>
                     <li class="sub-item"><a href="jadwalklh.html">Jadwal Kuliah</a></li>
                   </ul>
                 </li>
@@ -128,9 +129,10 @@
                     <li class="sub-item"><a href="berita.html">Berita</a></li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a href="" style="color: white;"><i class="search fa-solid
-                      fa-magnifying-glass fa-md" style=" padding: 7px 26px;"></i></a>
+              
+                <li class="searching nav-item">
+                  <a href="" onclick="return false;" style="color: white;"> <i class="search fa-solid
+                      fa-magnifying-glass fa-md"></i></a>
                     <!-- <ul class="sub-menu"> -->
                       <ul class="tombol-search">
                       <li class="tombol-search-item">
@@ -138,9 +140,10 @@
                           <form action="" class="tombol-search1"><input type="text"><i class="i-search fas fa-search"></i></form>
                   </div>
                       </li>
-                     
                     </ul>
-                      
+                </li>
+                <li class="close-search nav-item">
+                  <a href="" onclick="return false;" style="color: white;"> <i class="search closesearch fa-solid fa-times" ></i></a>
                 </li>
               </ul>
             </div>

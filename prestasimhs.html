@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/berita.css">
+    <link rel="stylesheet" href="css/active-nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -118,17 +119,18 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-2" href="#">Kategori</a>
+                  <a class="aktif nav-2" href="#">Kategori</a>
                   <ul class="sub-menu">
                     <li class="sub-item"><a href="event.html">Event</a></li>
-                    <li class="sub-item"><a href="prestasimhs.html">Prestasi Mahasiswa</a></li>
+                    <li class="sub-item"><a class="aktif" href="prestasimhs.html">Prestasi Mahasiswa</a></li>
                     <li class="sub-item"><a href="poster.html">Poster Mahasiswa</a></li>
                     <li class="sub-item"><a href="berita.html">Berita</a></li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a href="" style="color: white;"><i class="search fa-solid
-                      fa-magnifying-glass fa-md" style=" padding: 7px 26px;"></i></a>
+               
+                <li class="searching nav-item">
+                  <a href="" onclick="return false;" style="color: white;"> <i class="search fa-solid
+                      fa-magnifying-glass fa-md"></i></a>
                     <!-- <ul class="sub-menu"> -->
                       <ul class="tombol-search">
                       <li class="tombol-search-item">
@@ -136,9 +138,10 @@
                           <form action="" class="tombol-search1"><input type="text"><i class="i-search fas fa-search"></i></form>
                   </div>
                       </li>
-                     
                     </ul>
-                      
+                </li>
+                <li class="close-search nav-item">
+                  <a href="" onclick="return false;" style="color: white;"> <i class="search closesearch fa-solid fa-times" ></i></a>
                 </li>
               </ul>
             </div>
@@ -233,7 +236,7 @@
             <div class="card" style="padding: 0px; width: 100%;">
 
               <div class="imgcontainer">
-                <img src="Image/berita1.svg" class="card-img-top" alt="...">
+                <img src="Image/anicrop.jpg" class="card-img-top" alt="...">
               </div>
 
               <div class="kotakbiru card-body">
@@ -313,8 +316,22 @@
           </div>
         </div>
       </div>
-
-
+      
+      
+      <div class="respon2 kontak1 card mb-3" >
+        <div class="row g-0">
+          <div class="col-md-4 col-sm-4 col-4">
+            <img src="Image/crop 16 lomba_web_design2017-1.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 col-sm-8 col-8">
+            <div class="card-body">
+              <a href="prestasi5.html" style="text-decoration: none;"><h5 class="hberita card-title">Tim FORMATIF Universitas Riau Raih 10 Besar Nasional Web Design Competition di BINUS University</h5></a>
+              <p class="pberita card-text">Jakarta – Tim FORMATIF UR yang terdiri atas 5 orang mahasiswa Teknik Informatika mewakili .....  </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Yang dibawah ni desktop  --------------------------------------------------------------------------------------------------->
 
       <div class="c container">
@@ -387,8 +404,21 @@
                   <a href="prestasi4.html" class="btn">Selengkapnya</a>
                 </div>
               </div>
-
-
+              
+              
+              <div class="ccard">
+                <div class="image-section">
+                  <img src="Image/16 lomba_web_design2017-1.jpg" alt="">
+                </div>
+                <div class="content">
+                  <div class="head-berita10">
+                    <h4>Tim FORMATIF Universitas Riau Raih 10 Besar Nasional Web Design Competition di BINUS University</h4>
+                  </div>
+  
+                  <p>Jakarta – Tim FORMATIF UR yang terdiri atas 5 orang mahasiswa Teknik Informatika mewakili ..... </p>
+                  <a href="prestasi5.html" class="btn">Selengkapnya</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

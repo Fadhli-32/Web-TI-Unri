@@ -800,22 +800,28 @@ form input {
 
 
 .tombol-search1{
-	
+	background-color: #20386c;
 	border-radius: 20px;
-	margin-top: 10px;
-	margin-bottom: 20px;
+	margin: 20px 0px;
+	width: 100%;
 	padding: 0px;
 }
 .tombol-search1 input{ 
-	color:black;
-	width:1400px;
-	height: 0px;
+	background-color: #20386c;
+	color:rgb(255, 255, 255);
+	width:95%;
+	margin-left: 20px;
+	font-family: Poppins;
 	border: none;
 	outline: none;
 }
 .i-search {
+	color: white;
 	margin-left: 0px;
 	margin-right: 10px;
+}
+.tombol-search.pink{
+	top: 48px;
 }
 .tombol-search{
 	z-index: 1;
@@ -828,10 +834,13 @@ form input {
 	right: 0;
 	
 	list-style: none;
-	border-radius: 0 0 8px 8px;
-	pointer-events: none;
-	transform: translateY(20px);
-	opacity: 0;
+
+	display: none;
+	pointer-events: all;
+	transform: translateY(0);
+	opacity: 1;
+
+
 	transition: 0.3s;
 	transition-property: transform, opacity;
 }
@@ -852,6 +861,11 @@ form input {
 	margin-right: 10px;
 }
 
+/* .nav-item:hover .tombol-search{
+	pointer-events: all;
+	transform: translateY(0);
+	opacity: 1;
+} */
 .nav-item:hover .tombol-search{
 	pointer-events: all;
 	transform: translateY(0);
@@ -884,6 +898,7 @@ form input {
 	width: 196px;
 } */
 }
+
 
 
 
@@ -1401,10 +1416,15 @@ body::-webkit-scrollbar-thumb {
 	.logounri {
 
 		margin-left: 20px;
-		width: 171.5px;
-		height: 51.1px;
+		width: 122.5px;
+		height: 36.5px;
 	}
-
+.header{
+	height: 60px;
+}
+.navbar1{
+	height: 60px;
+}
 
 	.slideshow {
 		background-color: #060047;
@@ -1742,8 +1762,14 @@ body::-webkit-scrollbar-thumb {
 	.logounri {
 
 		margin-left: 20px;
-		width: 171.5px;
-		height: 51.1px;
+		width: 122.5px;
+		height: 36.5px;
+	}
+	.header{
+		height: 60px;
+	}
+	.navbar1{
+		height: 60px;
 	}
 
 

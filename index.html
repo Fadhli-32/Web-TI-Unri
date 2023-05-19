@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/active-nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -119,7 +120,7 @@
             <ul class="navbar-nav" style="padding-top: 20px;">
     
               <li class="nav-item">
-                <a class="nav-2" href="index.html">Beranda</a>
+                <a class="aktif nav-2" href="index.html">Beranda</a>
               </li>
               <li class="nav-item">
                 <a class="nav-2" href="#">Profil</a>
@@ -167,9 +168,9 @@
                   <li class="sub-item"><a href="berita.html">Berita</a></li>
               </ul>
               </li>
-              <li class="nav-item">
-                <a href="" style="color: white;"><i class="search fa-solid
-                    fa-magnifying-glass fa-md" style=" padding: 7px 26px;"></i></a>
+              <li class="searching nav-item">
+                <a href="" onclick="return false;" style="color: white;"> <i class="search fa-solid
+                    fa-magnifying-glass fa-md"></i></a>
                   <!-- <ul class="sub-menu"> -->
                     <ul class="tombol-search">
                     <li class="tombol-search-item">
@@ -178,6 +179,9 @@
                 </div>
                     </li>
                   </ul>
+              </li>
+              <li class="close-search nav-item">
+                <a href="" onclick="return false;" style="color: white;"> <i class="search closesearch fa-solid fa-times" ></i></a>
               </li>
             </ul>
           </div>
@@ -319,7 +323,7 @@
               <div class="card" style="padding: 0px; width: 100%;">
 
                 <div class="imgcontainer">
-                  <img src="Image/berita1.svg" class="card-img-top" alt="...">
+                  <img src="Image/anicrop.jpg" class="card-img-top" alt="...">
                 </div>
 
                 <div class="kotakbiru card-body">
@@ -330,7 +334,7 @@
                     left; margin-left: 15px; margin-right: 15px; color: rgb(160,
                     164, 164);">Ani Mardhatillah, mahasiswa Teknik Informatika
                     UNRI menjadi juara 1 pada lomba .....</p>
-                  <a href="#" class="btn" style="text-size-adjust: 12px;">Selengkapnya</a>
+                  <a href="postingan6.html" class="btn" style="text-size-adjust: 12px;">Selengkapnya</a>
                 </div>
               </div>
             </div>
@@ -342,7 +346,7 @@
 
             <div class="respon ccard">
               <div class="image-section">
-                <img src="Image/berita1.svg" alt="">
+                <img src="Image/anicrop.jpg" alt="">
               </div>
               <div class="content">
                 <div class="head-berita10">
@@ -351,7 +355,7 @@
                 </div>
                 <p>Ani Mardhatillah, mahasiswa Teknik Informatika UNRI menjadi
                   juara 1 ..... </p>
-                <a href="postingan1.html" class="btn">Selengkapnya</a>
+                <a href="postingan6.html" class="btn">Selengkapnya</a>
               </div>
             </div>
 
@@ -378,7 +382,7 @@
                   <h4>Dr. Irsan Taufik Ali, ST., MT dosen Prodi Teknik Informatika meraih gelar Doktor di bidang Deep Learning.</h4>
                 </div>
                 <p>Dr. Irsan Taufik Ali, ST., MT meraih gelar Doktor di bidang Artificial .....</p>
-                <a href="postingan1.html" class="btn">Selengkapnya</a>
+                <a href="postingan2.html" class="btn">Selengkapnya</a>
               </div>
             </div>
 
@@ -407,7 +411,7 @@
                 </div>
                 <p>Jurusan Teknik Elektro Program Studi Teknik Informatika yang
                   bekerjasama dengan .....</p>
-                <a href="Read more" class="btn">Selengkapnya</a>
+                <a href="postevent3.html" class="btn">Selengkapnya</a>
               </div>
             </div>
 
@@ -421,7 +425,7 @@
                 </div>
                 <p>Program Studi Teknik Informatika Universitas Riau bekerjasama
                   dengan GDSC-UR .....</p>
-                <a href="Read more" class="btn">Selengkapnya</a>
+                <a href="postevent2.html" class="btn">Selengkapnya</a>
               </div>
             </div>
 
@@ -438,7 +442,7 @@
 
                 <p>Computer Vision adalah bidang ilmiah antar disiplin yang
                   membahas bagaimana .....</p>
-                <a href="Read more" class="btn">Selengkapnya</a>
+                <a href="postevent1.html" class="btn">Selengkapnya</a>
               </div>
             </div>
           </div>
@@ -474,7 +478,7 @@
           </div>
           <div class="col-md-8 col-sm-8 col-8">
             <div class="card-body">
-              <a href="" style="text-decoration: none;"><h5 class="hberita card-title">Dr. Irsan Taufik Ali, ST., MT dosen Prodi Teknik Informatika meraih gelar Doktor di bidang Deep Learning</h5></a>
+              <a href="postingan2.html" style="text-decoration: none;"><h5 class="hberita card-title">Dr. Irsan Taufik Ali, ST., MT dosen Prodi Teknik Informatika meraih gelar Doktor di bidang Deep Learning</h5></a>
               <p class="pberita card-text">Dr. Irsan Taufik Ali, ST., MT dosen Prodi Teknik Informatika meraih..... </p>
               
             </div>
@@ -488,7 +492,7 @@
           </div>
           <div class="col-md-8 col-sm-8 col-8">
             <div class="card-body">
-              <a href="" style="text-decoration: none;"><h5 class="hberita card-title">[EVENT] KULIAH UMUM : Data Analytics for Health Sector</h5></a>
+              <a href="postevent3.html" style="text-decoration: none;"><h5 class="hberita card-title">[EVENT] KULIAH UMUM : Data Analytics for Health Sector</h5></a>
               <p class="pberita card-text">Jurusan Teknik Elektro Program Studi Teknik Informatika yang
                 bekerjasama dengan ..... </p>
               
@@ -503,7 +507,7 @@
           </div>
           <div class="col-md-8 col-sm-8 col-8">
             <div class="card-body">
-              <a href="" style="text-decoration: none;"><h5 class="hberita card-title">[EVENT] WEBINAR : How to Create a Project/Research Poster</h5></a>
+              <a href="postevent2.html" style="text-decoration: none;"><h5 class="hberita card-title">[EVENT] WEBINAR : How to Create a Project/Research Poster</h5></a>
               <p class="pberita card-text">Program Studi Teknik Informatika Universitas Riau bekerjasama
                 dengan GDSC-UR ..... </p>
               
@@ -514,11 +518,11 @@
       <div class="respon1 kontak card mb-3" >
         <div class="row g-0">
           <div class="col-md-4 col-sm-4 col-4">
-            <img src="Image/crop orientasi fga dts.jpg" class="img-fluid rounded-start" alt="...">
+            <img src="Image/webinar-ti.jpeg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8 col-sm-8 col-8">
             <div class="card-body">
-              <a href="" style="text-decoration: none;"><h5 class="hberita card-title">[EVENT] KULIAH UMUM : Computer Vision dan Artificial
+              <a href="postevent1.html" style="text-decoration: none;"><h5 class="hberita card-title">[EVENT] KULIAH UMUM : Computer Vision dan Artificial
                 Intelligence di Era Revolusi Industri 4.0</h5></a>
               <p class="pberita card-text">Computer Vision adalah bidang ilmiah antar disiplin yang
                 membahas bagaimana ..... </p>
