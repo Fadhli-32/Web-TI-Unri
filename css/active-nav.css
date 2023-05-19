@@ -1,0 +1,21 @@
+.aktif{ 
+    color: #ffff00;
+}
+.aktif.pink{
+    color: #ffff00;
+}
+.sub-item .aktif{
+    color: #ffff00;
+}
+.sub-item .aktif.pink{
+    color: #ffff00;
+}
+.close-search{
+    display: none;
+    margin-left:-30px;
+    margin-top:1px;
+    padding: 6px 0px;
+}
+.search{
+   padding: 7px 26px;
+}

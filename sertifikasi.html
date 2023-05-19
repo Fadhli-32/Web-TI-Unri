@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="css/galeri.css">
+  <link rel="stylesheet" href="css/active-nav.css">
   <link rel="stylesheet" href="css/sertifikasi.css">
  
   <link rel="stylesheet" href="css/fototes.css">
@@ -121,7 +122,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-2" href="sertifikasi.html">Sertifikasi</a>
+            <a class="aktif nav-2" href="sertifikasi.html">Sertifikasi</a>
           </li>
           <li class="nav-item">
             <a class="nav-2" href="#">Galeri</a>
@@ -141,9 +142,9 @@
               <li class="sub-item"><a href="berita.html">Berita</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a href="" style="color: white;"><i class="search fa-solid
-                fa-magnifying-glass fa-md" style=" padding: 7px 26px;"></i></a>
+          <li class="searching nav-item">
+            <a href="" onclick="return false;" style="color: white;"> <i class="search fa-solid
+                fa-magnifying-glass fa-md"></i></a>
               <!-- <ul class="sub-menu"> -->
                 <ul class="tombol-search">
                 <li class="tombol-search-item">
@@ -153,6 +154,10 @@
                 </li>
               </ul>
           </li>
+          <li class="close-search nav-item">
+            <a href="" onclick="return false;" style="color: white;"> <i class="search closesearch fa-solid fa-times" ></i></a>
+          </li>
+
         </ul>
        </div>
       

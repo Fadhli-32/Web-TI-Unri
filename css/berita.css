@@ -20,7 +20,7 @@ body {
 }
 
 .media-icons{
-	z-index: 888;
+	z-index: 88;
 	position: absolute;
 	left: 30px;
 	display: flex;
@@ -239,6 +239,7 @@ button:active{
 
 }
 .sub-menu{
+	z-index: 99;
 	position: absolute;
 	background: #1c315e;
 	top: 48px;
@@ -548,7 +549,7 @@ label.logo.pink{
     color: #F252AA;
 } */
 nav ul {
-    z-index: 100000;
+
 	float: right;
     /* padding-bottom: 20px; */
 	margin-right: 20px;
@@ -562,7 +563,7 @@ nav ul.pink{
 }
 
 nav ul li {
-    z-index: 100000;
+   
 	/* display: inline-block;
 	line-height: 80px;
 	margin: 0 10px;
@@ -601,7 +602,7 @@ nav ul li:hover::after {
 }
 
 nav ul li a {
-    z-index: 100000;
+   
 	text-decoration: none;
 	color: rgb(247, 247, 247);
 	font-weight: 700;
@@ -871,24 +872,29 @@ form input {
 
 
 
-
 .tombol-search1{
-	
+	background-color: #20386c;
 	border-radius: 20px;
-	margin-top: 10px;
-	margin-bottom: 20px;
+	margin: 20px 0px;
+	width: 100%;
 	padding: 0px;
 }
 .tombol-search1 input{ 
-	color:black;
-	width:1400px;
-	height: 0px;
+	background-color: #20386c;
+	color:rgb(255, 255, 255);
+	width:95%;
+	margin-left: 20px;
+	font-family: Poppins;
 	border: none;
 	outline: none;
 }
 .i-search {
+	color: white;
 	margin-left: 0px;
 	margin-right: 10px;
+}
+.tombol-search.pink{
+	top: 48px;
 }
 .tombol-search{
 	z-index: 1;
@@ -901,10 +907,13 @@ form input {
 	right: 0;
 	
 	list-style: none;
-	border-radius: 0 0 8px 8px;
-	pointer-events: none;
-	transform: translateY(20px);
-	opacity: 0;
+
+	display: none;
+	pointer-events: all;
+	transform: translateY(0);
+	opacity: 1;
+
+
 	transition: 0.3s;
 	transition-property: transform, opacity;
 }
@@ -925,6 +934,11 @@ form input {
 	margin-right: 10px;
 }
 
+/* .nav-item:hover .tombol-search{
+	pointer-events: all;
+	transform: translateY(0);
+	opacity: 1;
+} */
 .nav-item:hover .tombol-search{
 	pointer-events: all;
 	transform: translateY(0);
@@ -1432,6 +1446,9 @@ body::-webkit-scrollbar-thumb {
 	.visimisi p, .visimisi li{
 		font-size: 16px;
 	}
+	.visimisi h4{
+		font-size: 20px;
+	}
 	.bottom-left {
 		position: absolute;
 		bottom: 8px;
@@ -1565,6 +1582,12 @@ body::-webkit-scrollbar-thumb {
 		margin-left: 20px;
 		width: 122.5px;
 		height: 36.5px;
+	}
+	.header{
+		height: 60px;
+	}
+	.navbar1{
+		height: 60px;
 	}
 
 
@@ -1834,6 +1857,9 @@ body::-webkit-scrollbar-thumb {
 	.visimisi p, .visimisi li{
 		font-size: 14px;
 	}
+	.visimisi h4{
+		font-size: 18px;
+	}
 	.bottom-left {
 		position: absolute;
 		bottom: 3px;
@@ -1968,12 +1994,19 @@ body::-webkit-scrollbar-thumb {
 		margin-top: 345px;
 	}
 
-	.logounri {
+		.logounri {
 
 		margin-left: 20px;
 		width: 122.5px;
 		height: 36.5px;
 	}
+	.header{
+		height: 60px;
+	}
+	.navbar1{
+		height: 60px;
+	}
+
 
 
 

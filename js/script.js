@@ -44,19 +44,19 @@
 
 $(window).scroll(function(){
 		
-    if($(window).scrollTop()){
-      // document.getElementById("scrollmenu").style.position = "fixed";
-        $("nav,nav ul, nav ul li, nav ul li a, .search, .logounri2, .navbar2, .flexbasis1, .flexbasis2").addClass("pink");
-    }else{
-      // $("nav, scrollmenu").style.position = "relative";
-        $("nav,nav ul, nav ul li, nav ul li a, .search, .logounri2, .navbar2, .flexbasis1, .flexbasis2").removeClass("pink");
-    }
+  if($(window).scrollTop()){
+    // document.getElementById("scrollmenu").style.position = "fixed";
+      $("nav,nav ul, nav ul li, nav ul li a, .search, .logounri2, .navbar2, .flexbasis1, .flexbasis2, .aktif, .sub-item, .tombol-search").addClass("pink");
+  }else{
+    // $("nav, scrollmenu").style.position = "relative";
+      $("nav,nav ul, nav ul li, nav ul li a, .search, .logounri2, .navbar2, .flexbasis1, .flexbasis2, .aktif, .sub-item, .tombol-search").removeClass("pink");
+  }
 })
 
 
 
 // $(window).scroll(function(){
-		
+  
 //   if($(window).scrollTop()){
 //     // document.getElementById("scrollmenu").style.position = "fixed";
 //       $("nav,.ul, .li, nav ul li a, .search, .logounri2, .navbar2").addClass("pink");
@@ -153,6 +153,44 @@ $(window).scroll(function(){
 
 // handleHeader();
 
+const search = document.querySelector('.searching');
+const search1 = document.querySelector('.close-search');
+const search3 = document.querySelector('.search');
+const search4 = document.querySelector('.tombol-search');
+const search6 = document.querySelector('.tombol-search-item');
+const search5 = document.querySelector('.tombolsearch');
+const search7 = document.querySelector('.tombol-search1');
+
+function searchbar(){
+
+search.addEventListener('click', ()=>{
+  search1.style.display = 'inline';
+  search3.style.display = 'none';
+  search4.style.display = 'block';
+  search5.style.display = 'block';
+  search6.style.display = 'block';
+  search7.style.display = 'block';
+})
+
+search1.addEventListener('click', ()=>{
+  search3.style.display = 'inline';
+  search1.style.display = 'none';
+  search4.style.display = 'none';
+  search5.style.display = 'none';
+  search6.style.display = 'none';
+  search7.style.display = 'none';
+})
+}
+searchbar()
+
+
+
+
+
+
+
+
+
 const mainMenu = document.getElementsByClassName('mobile-menu')[0];
 const closeMenu = document.getElementsByClassName('closeMenu')[0];
 const openMenu = document.getElementsByClassName('openMenu')[0];
@@ -163,26 +201,26 @@ const menu4 = document.getElementsByClassName('rsub-menu')[3];
 
 function handleSidebar() {
 openMenu.addEventListener('click', () => {
-    closeMenu.style.display = 'block';
-    openMenu.style.display = 'none';
-    mainMenu.style.top = '70px';
+  closeMenu.style.display = 'block';
+  openMenu.style.display = 'none';
+  mainMenu.style.top = '60px';
 })
 closeMenu.addEventListener('click', () => {
-    mainMenu.style.top = '-100%';
-    openMenu.style.display = 'block';
-    closeMenu.style.display = 'none';
-    menu.style.display = 'none';
-    menu2.style.display = 'none';
-    menu3.style.display = 'none';
-    menu4.style.display = 'none';
+  mainMenu.style.top = '-100%';
+  openMenu.style.display = 'block';
+  closeMenu.style.display = 'none';
+  menu.style.display = 'none';
+  menu2.style.display = 'none';
+  menu3.style.display = 'none';
+  menu4.style.display = 'none';
 })
 }
 
 handleSidebar()
 
 $(document).ready(function(){
-  $(".nav-3").click(function(){
-    $(this).next(".rsub-menu").slideToggle();
-  })
+$(".nav-3").click(function(){
+  $(this).next(".rsub-menu").slideToggle();
+})
 })
 
