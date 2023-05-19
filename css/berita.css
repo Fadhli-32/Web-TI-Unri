@@ -15,6 +15,37 @@ body {
     overflow-x: hidden;
 }
 
+.iframe-container{
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	height: 0;
+	z-index: 99;
+	/* background-color: #1c315e; */
+}	
+.iframe-container iframe{
+	position: absolute;
+	top: 12%;
+	bottom:0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 75%;
+	height: 75%;
+	z-index: 999;
+}
+.strip{
+	width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+	top: calc(20vw + 50%);
+	
+	
+	
+    height: 100px;
+    /* background-color: #1c315e; */
+	
+}
 .share{
 	margin-bottom: 50px;
 }
@@ -94,6 +125,14 @@ button:active{
 }
 .post{
     width: 50%;
+    display: block;
+    
+    margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.post1{
+    width: 30%;
     display: block;
     
     margin-bottom: 40px;
@@ -1088,6 +1127,9 @@ form input {
 	.post{
 		width: 65%;
 	}
+	.post1{
+		width: 45%;
+	}
 	.mikrotik{
 		width: 70%;
 		padding: 40px;
@@ -1340,6 +1382,9 @@ body::-webkit-scrollbar-thumb {
 	}
 	.post{
 		width: 75%;
+	}
+	.post1{
+		width: 50%;
 	}
 	button{
 		display: inline-block;
@@ -1678,6 +1723,9 @@ body::-webkit-scrollbar-thumb {
 	.post{
 		width: 70%;
 	}
+	.post1{
+		width: 50%;
+	}
 	button{
 		font-size: 12px;
 	}
@@ -1804,6 +1852,9 @@ body::-webkit-scrollbar-thumb {
 	}
 	.post{
 		width: 90%;
+	}
+	.post1{
+		width: 60%;
 	}
 	button{
 		display: inline-block;
