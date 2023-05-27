@@ -16,6 +16,21 @@ body {
 	align-items: center;
   justify-content: center;
 }
+.ikonfooter{
+	display: flex;
+	
+}
+.footerimg{
+	
+	height: 80px;
+	margin: 80px 0 30px 0;
+}
+.tjh{
+	height:70px;
+	margin: 80px 0 30px 0;
+}
+
+
 .pictitle{
 	display: none;
 }
@@ -1167,6 +1182,18 @@ form input {
 
 
 @media (min-width: 768px) and  (max-width: 992px) {
+	.ikonfooter{
+		display: flex;
+		justify-content: center;
+	}
+	.footerimg{
+		height: 80px;
+		margin: 0px 0 30px 0;
+	}
+	.tjh{
+		height:70px;
+		margin: 30px 0 30px 0;
+	}
 	.ulsize{
 		height:220px;
 	}
@@ -1417,6 +1444,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 420px) and (max-width: 768px) {
+	.ikonfooter{
+		display: flex;
+		justify-content: center;
+	}
+	.footerimg{
+		height: 80px;
+		margin: 0px 0 30px 0;
+	}
+	.tjh{
+		height:70px;
+		margin: 30px 0 30px 0;
+	}
 	.ulsize{
 		height:110px;
 	}
@@ -1682,6 +1721,36 @@ body::-webkit-scrollbar-thumb {
 
 
 @media screen and (max-width: 500px) {
+	.single-box h2::after {
+		content: "";
+		height: 2px;
+		width: 180px;
+		background-color: #ffff00;
+		display: block;
+		position: relative;
+		left: 0px;
+		top: 15px;
+		bottom: 0px;
+		margin: auto;
+	}
+	footer{
+		font-size: 12px;
+	}
+	.underfooter{
+		font-size: 15px !important;
+	}
+	.ikonfooter{
+		display: flex;
+		justify-content: center;
+	}
+	.footerimg{
+		height: 80px;
+		margin: 0px 0 30px 0;
+	}
+	.tjh{
+		height:70px;
+		margin: 30px 0 30px 0;
+	}
 	/* .pictitle{
 		display: block;
 	}
@@ -1758,6 +1827,18 @@ body::-webkit-scrollbar-thumb {
 
 
 @media (min-width: 200px) and (max-width: 420px) {
+	.ikonfooter{
+		display: flex;
+		justify-content: center;
+	}
+	.footerimg{
+		height: 80px;
+		margin: 0px 0 30px 0;
+	}
+	.tjh{
+		height:70px;
+		margin: 30px 0 30px 0;
+	}
 	.row-1{
 		padding-top: 30px;
 	}
@@ -1919,7 +2000,7 @@ body::-webkit-scrollbar-thumb {
 		font-size: 30px;
 	}
 
-	.single-box h2::after {
+	/* .single-box h2::after {
 		content: "";
 		height: 2px;
 		width: 220px;
@@ -1930,7 +2011,7 @@ body::-webkit-scrollbar-thumb {
 		top: 15px;
 		bottom: 0px;
 		margin: auto;
-	}
+	} */
 
 	.single-box img {
 		width: 50%;
@@ -1978,18 +2059,6 @@ body::-webkit-scrollbar-thumb {
 		padding: 9px;
 	}
 
-	.single-box h2::after {
-		content: "";
-		height: 2px;
-		width: 220px;
-		background-color: #ffff00;
-		display: block;
-		position: relative;
-		left: 0px;
-		top: 15px;
-		bottom: 0px;
-		margin: auto;
-	}
 
 	.single-box img {
 		width: 50%;
